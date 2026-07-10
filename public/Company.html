@@ -1,0 +1,396 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | Nextek Sol</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Sora:wght@100..900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#3d48d9",
+                    "outline": "#7b7487",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#eef0ff",
+                    "surface": "#faf8ff",
+                    "on-tertiary-fixed-variant": "#46464f",
+                    "outline-variant": "#ccc3d8",
+                    "on-tertiary-container": "#e7e5f1",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#d2bbff",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "primary": "#630ed4",
+                    "inverse-primary": "#d2bbff",
+                    "surface-container-highest": "#dae2fd",
+                    "tertiary-fixed": "#e3e1ed",
+                    "on-primary-container": "#ede0ff",
+                    "primary-fixed": "#eaddff",
+                    "on-tertiary-fixed": "#1a1b23",
+                    "on-surface": "#131b2e",
+                    "surface-tint": "#732ee4",
+                    "background": "#faf8ff",
+                    "surface-container-low": "#f2f3ff",
+                    "surface-container": "#eaedff",
+                    "secondary-fixed": "#e0e0ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#faf8ff",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#666670",
+                    "on-background": "#131b2e",
+                    "primary-container": "#7c3aed",
+                    "on-primary-fixed": "#25005a",
+                    "tertiary-fixed-dim": "#c7c5d1",
+                    "surface-dim": "#d2d9f4",
+                    "on-secondary-fixed-variant": "#222ec4",
+                    "tertiary": "#4e4e58",
+                    "inverse-surface": "#283044",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#4a4455",
+                    "on-secondary-fixed": "#00046a",
+                    "surface-variant": "#dae2fd",
+                    "secondary-container": "#5864f3",
+                    "on-secondary-container": "#fffbff",
+                    "surface-container-high": "#e2e7ff",
+                    "secondary-fixed-dim": "#bec2ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "container-max": "1280px",
+                    "base": "8px",
+                    "margin-desktop": "48px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-xl": ["Sora"],
+                    "display-lg-mobile": ["Sora"],
+                    "headline-lg": ["Sora"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Sora"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg": ["28px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 transition-all duration-300">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbmth34VeLQKvtsyJ4CHFrg9314B_ZxSu3abDhH_8uCeHjrzC1iuUrhN0swqsj1MXvKcFZ34gDIy4thSlSD7fUDQQtQUqwPpsP_IgYT6Hz0j9p8xZ37H3SYMTHsjxrtfxzNJt9D4j43F4rhgDzq7rMC1cYJO0IJHIpwSqcIRATUNasG4nStDS1hGgi8E7Pb2kQmnGdnq1Y_kPGs5fTCcN8WCqykBsHPeO92vSFDPIdOHjAaceYhQcDwxJ_K4jYk2cO" alt="Nextek Sol Logo" class="h-10 w-auto object-contain">
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Solutions</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Case Studies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Intelligence</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Company</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-80 transition-opacity active:scale-95 duration-200 ease-in-out">
+            Start Scoping
+        </button>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="relative w-full h-[600px] rounded-xl overflow-hidden mb-12 group">
+<div class="absolute inset-0 z-0">
+
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent z-10"></div>
+<div class="relative z-20 h-full flex flex-col justify-center max-w-2xl px-12">
+<span class="text-primary font-label-md text-label-md mb-4 flex items-center gap-2">
+<span class="w-8 h-[1px] bg-primary"></span>
+                        WHO WE ARE
+                    </span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Built on Technical Authority.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        We don't just build software; we engineer infrastructure for the future. Nextek Sol combines high-precision development with sovereign cloud security to empower the world's most ambitious enterprises.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Core Values: Bento Grid -->
+<section class="bg-surface-container-low py-section-gap px-margin-desktop">
+  <div class="max-w-container-max mx-auto">
+    <div class="text-center mb-16">
+      <span class="text-primary font-label-md text-label-md mb-4 block uppercase tracking-widest">Performance Metrics &amp; Scale</span>
+      <h2 class="font-headline-xl text-headline-xl">Our Global Impact</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <div class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-2">10+</div>
+        <div class="font-label-md text-on-surface-variant uppercase tracking-widest">Years in Market</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-2">250+</div>
+        <div class="font-label-md text-on-surface-variant uppercase tracking-widest">Expert Engineers</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-2">500+</div>
+        <div class="font-label-md text-on-surface-variant uppercase tracking-widest">Projects Delivered</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-2">99%</div>
+        <div class="font-label-md text-on-surface-variant uppercase tracking-widest">Satisfied Clients</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Leadership Section -->
+<section class="bg-inverse-surface text-inverse-on-surface py-section-gap px-margin-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl mb-6">Led by Elite Engineers</h2>
+<p class="text-surface-variant font-body-lg text-body-lg">
+                            Our leadership team is composed of technologists who have built foundational protocols and scaled unicorn infrastructure from the ground up.
+                        </p>
+</div>
+<a class="text-primary-fixed-dim hover:text-on-primary-container transition-colors flex items-center gap-2 font-label-md" href="#">
+                        View All Contributors <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Leader 1 -->
+<div class="group">
+<div class="aspect-[3/4] relative rounded-xl overflow-hidden mb-6 border border-outline/20">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional headshot of a senior software engineer in a high-tech studio environment with soft blue rim lighting. The style is modern corporate with a focus on technical expertise and leadership. The background is a blurred server room with subtle bokeh effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATXELDtdZ_btTXke-_Uhk1b487vX1lrfW-4FAR-WbcOM2WIszsfZ-KNWSU4NDemXwJ4cMKI7nrg3gayMzL3oVEQzKyhK_i-UfpBpwZUguk_-6V35gH5jReZGUDZwhrKFFv1ZD2PW-Nmnelwr6AVcfy9gZi2XgPSZZ9Vm5BPbST8d7UxTolYzhbyPcsuBrdS90_euyzkP-xMXNoTfdBRwaFkgnz9KrWXtim1nFPsy5tznzBmMQCFEY">
+</div>
+<h4 class="font-headline-lg text-headline-lg mb-1">Dr. Elena Vance</h4>
+<p class="text-primary-fixed-dim font-label-md mb-4 uppercase tracking-widest">Chief Architect</p>
+<div class="flex gap-4">
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Leader 2 -->
+<div class="group">
+<div class="aspect-[3/4] relative rounded-xl overflow-hidden mb-6 border border-outline/20">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of a young male lead engineer with glasses, looking thoughtfully at a holographic code display in a dimly lit, minimalist tech office. The lighting features sharp purple and electric blue accents, reflecting a high-performance software engineering brand identity. Ultra-clean, professional cinematic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ7FY-0GKrRR_ejWCOTBpBuDcgCQocU3DY6wB21RKU3NhY7WCv0gNtT-AQhCU0-6lg04sM7WgsrsdbiwiR6VtPTkRVz578GXPeaJK4v5jsKqV9esHFgkpFFbjyDiRgOIqjRApXYAnFYxVNsSRfAiAOeJyeuBpdXrkdUY5HMtCKhPD7wuwaxEyN6CtdmQWzuiSq5TJuTYWBlTcehKG102uAtey0Cx5nEkil4x-0PPQbrMrRMDqZyN0">
+</div>
+<h4 class="font-headline-lg text-headline-lg mb-1">Marcus Thorne</h4>
+<p class="text-primary-fixed-dim font-label-md mb-4 uppercase tracking-widest">VP Engineering</p>
+<div class="flex gap-4">
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Leader 3 -->
+<div class="group">
+<div class="aspect-[3/4] relative rounded-xl overflow-hidden mb-6 border border-outline/20">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sophisticated professional portrait of a senior cloud infrastructure specialist in a clean, brightly lit technical studio. The background is a minimalist composition of floating digital architectural diagrams. Lighting is high-key and soft, utilizing the clean white and electric purple brand palette for a modern corporate look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcXP8m7lpPAOqze62PLEwFsVaTaBl9F8MxVSBNmY0Vxng-8a-o-jrJcwx6c9BMbeQEz8yRgxmgDyDgPO_PvHyRkq6tH39gPLepQGRgyhY04VOlNhG5j0fCTTN5Jzm50wPitEU4RrXUZ3HGbgpvZifMUOIiVc7EOkWjOOgcT-XMje-Fn9kFLES4obToH4qzKqxJ007Lpa_Id-kErLkDqcS6Fo4xnO2ZB8jUBtRYESM6FnohdV7o3kk">
+</div>
+<h4 class="font-headline-lg text-headline-lg mb-1">Sarah Chen</h4>
+<p class="text-primary-fixed-dim font-label-md mb-4 uppercase tracking-widest">Head of Cloud</p>
+<div class="flex gap-4">
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Leader 4 -->
+<div class="group">
+<div class="aspect-[3/4] relative rounded-xl overflow-hidden mb-6 border border-outline/20">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional corporate headshot of a Chief Security Officer in a dark, high-contrast studio setting with subtle electric purple and tech-blue lighting. The background features a faint, abstract digital security grid. The style is authoritative, innovative, and sleek, embodying the precision and performance of a high-end software engineering firm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0E1gUtjBQNWh7D4gNp2_D06aKIi00NvDFBZDbByylh4TDhnyHk6DBino_2cJAMVYofFjr1utBjfrD4CGfY3syjXAuJ8ZLbBFKlwcf5iK7UlcXHiFfkTHYe4C526LGxek2yrSPVDorW2DXgNihGuNPM-L7_vk8gWvGCQBhCht_WWwNIEWHige9UmNIIPHgI9LKzc8pQyEfwlq47EJvB5jlaF3aO3XFuvGB_46akMTg5ZW-Hsxaa5g">
+</div>
+<h4 class="font-headline-lg text-headline-lg mb-1">Julian Reed</h4>
+<p class="text-primary-fixed-dim font-label-md mb-4 uppercase tracking-widest">CSO</p>
+<div class="flex gap-4">
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="text-surface-variant hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Security & Compliance Section -->
+<section class="px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-gutter items-center">
+<div class="md:w-1/2">
+<span class="text-primary font-label-md text-label-md mb-4 block">SECURITY FIRST</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl mb-8">Uncompromising Compliance Architecture.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        We don't treat security as a checkbox. Our internal frameworks are built to exceed the most stringent global standards, providing a bulletproof foundation for your enterprise data.
+                    </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-md">ISO 27001 Certified</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-label-md">SOC2 Type II</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+<span class="font-label-md">HIPAA Compliant</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">policy</span>
+<span class="font-label-md">NIST Framework</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-4 p-8 bg-surface-container rounded-3xl">
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center justify-center border border-outline-variant/30 text-center">
+<div class="font-headline-lg font-bold text-primary mb-2">ISO</div>
+<div class="font-label-md opacity-70">27001</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center justify-center border border-outline-variant/30 text-center">
+<div class="font-headline-lg font-bold text-primary mb-2">SOC2</div>
+<div class="font-label-md opacity-70">COMPLIANT</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center justify-center border border-outline-variant/30 text-center">
+<div class="font-headline-lg font-bold text-primary mb-2">HIPAA</div>
+<div class="font-label-md opacity-70">READY</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center justify-center border border-outline-variant/30 text-center">
+<div class="font-headline-lg font-bold text-primary mb-2">NIST</div>
+<div class="font-label-md opacity-70">ALIGNMENT</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Authority Callout -->
+<section class="mb-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-primary-container text-on-primary-container p-12 md:p-24 rounded-3xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Ready to engineer your edge?</h2>
+<p class="font-body-lg text-body-lg mb-12 opacity-90">
+                        Join the fleet of technical leaders who trust Nextek Sol for their most critical infrastructure projects.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-on-primary-container text-primary-container px-10 py-4 rounded-xl font-headline-lg hover:opacity-90 transition-all">Start Scoping</button>
+<button class="border border-on-primary-container/30 text-on-primary-container px-10 py-4 rounded-xl font-headline-lg hover:bg-on-primary-container/10 transition-all">Download Thesis</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-base px-margin-desktop bg-inverse-surface dark:bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-gutter mb-16">
+<div class="col-span-2 md:col-span-1">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt1m9gro7zv9ZWCrrTUo8_-GRREr1675TysdU8TNplNmUZV9ZR5L42PQXhD0TmkUsBYlaKszDvz9QFE42b7eH3H4I8oB72BU7g5pEhR0PBfXcNUAaWIC-4g6fcJVVpdMurTZp9SzuJ1Xs0wT4NANYq_iftXlAJ-hM4v70RrB9D9Fa8YTNEpOvw0_sxK5wZPFtokVIkFbHsCN7FHMs63FA9fsXZeTtj7Vs7_N3j4ou1arufGs5JBulutmH3S2z2cIHb" alt="Nextek Sol Logo" class="h-10 w-auto object-contain mb-6 brightness-0 invert">
+<p class="text-surface-variant/70 dark:text-on-surface-variant/70 font-body-md text-body-md max-w-xs">
+                    Engineering precision software for the future-ready enterprise.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-on-primary/50 uppercase tracking-widest mb-2">Solutions</span>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">AI/ML</a>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">Enterprise Web</a>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">Cloud Infrastructure</a>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">DevOps</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-on-primary/50 uppercase tracking-widest mb-2">Platform</span>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">NeoPort</a>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">Sovereign Cloud</a>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">Security Compliance</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-on-primary/50 uppercase tracking-widest mb-2">Legal</span>
+<a class="text-surface-variant/70 hover:text-on-primary transition-colors" href="#">Privacy Policy</a>
+<div class="mt-4 flex gap-4">
+<a class="w-8 h-8 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-on-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</a>
+<a class="w-8 h-8 rounded-full border border-on-primary/20 flex items-center justify-center hover:bg-on-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto py-8 border-t border-outline/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-surface-variant/50 text-label-md">© 2024 Nextek Sol Inc. Precision Engineered.</div>
+<div class="flex gap-8 text-label-md text-surface-variant/50">
+<span class="">Designed in SF</span>
+<span class="">Hosted on Nextek Core</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll observer for header transparency
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-sm');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2', 'shadow-sm');
+                header.classList.add('py-4');
+            }
+        });
+
+        // Interactive hover effects for compliance cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+
+
+
+
+</body></html>
