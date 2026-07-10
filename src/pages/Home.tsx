@@ -39,17 +39,25 @@ export default function Home() {
     const container = document.getElementById('studyContainer')
     const nextBtn = document.getElementById('nextStudy')
     const prevBtn = document.getElementById('prevStudy')
-    let scrollAmount = 0
+    let scrollIndex = 0
     if (nextBtn && prevBtn && container) {
+      const getStep = () => {
+        const first = container.children[0] as HTMLElement
+        if (!first) return 600
+        const gap = parseFloat(getComputedStyle(container).gap) || 0
+        return first.offsetWidth + gap
+      }
+      const maxIndex = container.children.length - 1
+      const updateScroll = () => {
+        container.style.transform = `translate3d(${-scrollIndex * getStep()}px, 0, 0)`
+      }
       const onNext = () => {
-        scrollAmount -= 400
-        if (scrollAmount < -1200) scrollAmount = 0
-        container.style.transform = `translate3d(${scrollAmount}px, 0, 0)`
+        scrollIndex = scrollIndex === maxIndex ? 0 : scrollIndex + 1
+        updateScroll()
       }
       const onPrev = () => {
-        scrollAmount += 400
-        if (scrollAmount > 0) scrollAmount = -1200
-        container.style.transform = `translate3d(${scrollAmount}px, 0, 0)`
+        scrollIndex = scrollIndex === 0 ? maxIndex : scrollIndex - 1
+        updateScroll()
       }
       nextBtn.addEventListener('click', onNext)
       prevBtn.addEventListener('click', onPrev)

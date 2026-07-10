@@ -19,13 +19,13 @@ export const html = `
                 A specialized engineering collective dedicated to building high-concurrency systems, mission-critical AI, and frictionless digital experiences for the world's most ambitious enterprises.
             </p>
 <div class="flex flex-wrap gap-4 justify-center">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-headline-lg flex items-center gap-3 hover:bg-primary-container transition-all">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-headline-lg flex items-center gap-3 hover:bg-primary-container transition-all" href="/contact">
                     Start a Project
                     <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="border border-primary text-primary px-8 py-4 rounded-lg font-headline-lg hover:bg-primary-fixed transition-all">
+</a>
+<a class="border border-primary text-primary px-8 py-4 rounded-lg font-headline-lg hover:bg-primary-fixed transition-all" href="/solutions">
                     View Roadmap
-                </button>
+                </a>
 </div>
 </div>
 </div>
@@ -77,8 +77,8 @@ export const html = `
 </div>
 <!-- Web Card -->
 <div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
-<span class="material-symbols-outlined text-primary" data-icon="web">web</span>
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" data-icon="web">web</span>
 </div>
 <h3 class="font-headline-lg mb-3">Enterprise Web</h3>
 <p class="font-body-md text-on-surface-variant mb-8 line-clamp-3">Scalable React and Next.js applications built for massive traffic and real-time synchronization.</p>
@@ -95,7 +95,7 @@ export const html = `
 </div>
 <!-- Cloud Card -->
 <div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
-<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center mb-6 group-hover:bg-tertiary group-hover:text-on-tertiary transition-all">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="cloud">cloud</span>
 </div>
 <h3 class="font-headline-lg mb-3">Cloud Infrastructure</h3>
@@ -113,7 +113,7 @@ export const html = `
 </div>
 <!-- DevOps Card -->
 <div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
-<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
 </div>
 <h3 class="font-headline-lg mb-3">Elite DevOps</h3>
@@ -235,7 +235,7 @@ export const html = `
 </div>
 </div>
 <div class="mt-16 text-center">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-headline-lg">View All Case Studies</button>
+<a class="bg-primary text-on-primary px-10 py-4 rounded-lg font-headline-lg" href="/case-studies">View All Case Studies</a>
 </div>
 </section>
 <!-- 9. Industry Solutions (DARK TABBED) -->
@@ -248,7 +248,7 @@ export const html = `
 <div>
 <h2 class="font-display-lg text-headline-xl text-white mb-8">Industry Solutions</h2>
 <div class="space-y-4">
-<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 transition-all" id="tab-0" onclick="switchTab(0)">
+<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 transition-all dark-glass active-tab" id="tab-0" onclick="switchTab(0)">
 <span class="font-headline-lg text-white block">Fintech</span>
 <p class="text-surface-variant/60 font-body-md mt-2">Solving high-frequency processing challenges.</p>
 </button>
@@ -256,14 +256,14 @@ export const html = `
 <span class="font-headline-lg text-white block">Healthcare</span>
 <p class="text-surface-variant/60 font-body-md mt-2">Bridging legacy systems with modern AI.</p>
 </button>
-<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 hover:bg-white/5 transition-all dark-glass active-tab" id="tab-2" onclick="switchTab(2)">
+<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 hover:bg-white/5 transition-all" id="tab-2" onclick="switchTab(2)">
 <span class="font-headline-lg text-white block">Logistics</span>
 <p class="text-surface-variant/60 font-body-md mt-2">Optimizing supply chains with real-time data.</p>
 </button>
 </div>
 </div>
 <div class="p-12 dark-glass rounded-3xl min-h-[400px] flex flex-col justify-center accelerated-layer" id="tab-content">
-<div class="tab-content-item hidden" id="content-0">
+<div class="tab-content-item" id="content-0">
 <h3 class="font-display-lg text-headline-xl text-primary-fixed-dim mb-6">Fintech Resilience</h3>
 <div class="space-y-6">
 <div>
@@ -289,7 +289,7 @@ export const html = `
 </div>
 </div>
 </div>
-<div class="tab-content-item" id="content-2">
+<div class="tab-content-item hidden" id="content-2">
 <h3 class="font-display-lg text-headline-xl text-tertiary-fixed-dim mb-6">Smart Logistics</h3>
 <div class="space-y-6">
 <div>
@@ -461,7 +461,7 @@ export const html = `
 <h2 class="font-display-lg text-headline-xl">Latest Insights</h2>
 <p class="font-body-lg text-on-surface-variant">Thought leadership on engineering culture.</p>
 </div>
-<button class="font-label-md text-primary border-b border-primary pb-1">View All Articles</button>
+<a class="font-label-md text-primary border-b border-primary pb-1" href="/case-studies">View All Articles</a>
 </div>
 <div class="grid md:grid-cols-3 gap-gutter">
 <article class="group cursor-pointer accelerated-layer">
