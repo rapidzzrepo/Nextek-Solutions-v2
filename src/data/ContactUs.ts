@@ -98,6 +98,16 @@ export const html = `
 <p class="font-sora font-semibold text-on-surface text-sm leading-relaxed">Zee Heights, International Market, M Block Model Town, Lahore</p>
 </div>
 </div>
+<div class="group flex gap-5">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" src="/Admin/Talha-Rafi.jpg" alt="Talha Rafi"/>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Head of Sales</p>
+<p class="font-sora font-semibold text-on-surface">Talha Rafi</p>
+<p class="text-sm text-on-surface-variant">+92 321 8819634</p>
+</div>
+</div>
 </div>
 </div>
 <div class="p-8 rounded-xl bg-surface-container-low border border-outline-variant/30">
@@ -192,7 +202,7 @@ export const html = `
 </div>
 <div class="flex items-center gap-2 text-sm text-on-surface-variant">
 <span class="material-symbols-outlined text-primary text-lg">call</span>
-<span>92 42 35218902</span>
+<span>+92 42 35218902</span>
 </div>
 </div>
 <div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between">
