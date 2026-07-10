@@ -80,32 +80,47 @@ export default function CaseStudies() {
       }
     }
 
+    // Study key order for cycling
+    const studyKeys = ['sovereign', 'atlas', 'neobank', 'health', 'automation', 'mesh']
+    let currentIndex = studyKeys.indexOf('health') // default featured is 'health'
+
+    const swapStudy = (key: string, smoothScroll = false) => {
+      const data = studyData[key]
+      if (!data) return
+      const titleEl = document.getElementById('featured-title')
+      const descEl = document.getElementById('featured-desc')
+      const imgEl = document.getElementById('featured-img') as HTMLImageElement
+      const authorEl = document.getElementById('featured-author')
+      const timeEl = document.getElementById('featured-time')
+      const container = titleEl?.closest('.flex-col')
+      if (container) {
+        ;(container as HTMLElement).style.opacity = '0'
+        ;(container as HTMLElement).style.transition = 'opacity 0.2s ease-in-out'
+      }
+      setTimeout(() => {
+        if (titleEl) titleEl.textContent = data.title
+        if (descEl) descEl.textContent = data.desc
+        if (imgEl) imgEl.src = data.img
+        if (authorEl) authorEl.textContent = data.author
+        if (timeEl) timeEl.textContent = data.time
+        if (container) (container as HTMLElement).style.opacity = '1'
+        if (smoothScroll) window.scrollTo({ top: 0, behavior: 'smooth' })
+      }, 200)
+    }
+
     document.querySelectorAll('[data-study]').forEach(card => {
       card.addEventListener('click', () => {
         const studyKey = card.getAttribute('data-study')
         if (!studyKey) return
-        const data = studyData[studyKey]
-        if (!data) return
-        const titleEl = document.getElementById('featured-title')
-        const descEl = document.getElementById('featured-desc')
-        const imgEl = document.getElementById('featured-img') as HTMLImageElement
-        const authorEl = document.getElementById('featured-author')
-        const timeEl = document.getElementById('featured-time')
-        const container = titleEl?.closest('.flex-col')
-        if (container) {
-          ;(container as HTMLElement).style.opacity = '0'
-          ;(container as HTMLElement).style.transition = 'opacity 0.2s ease-in-out'
-        }
-        setTimeout(() => {
-          if (titleEl) titleEl.textContent = data.title
-          if (descEl) descEl.textContent = data.desc
-          if (imgEl) imgEl.src = data.img
-          if (authorEl) authorEl.textContent = data.author
-          if (timeEl) timeEl.textContent = data.time
-          if (container) (container as HTMLElement).style.opacity = '1'
-          window.scrollTo({ top: 0, behavior: 'smooth' })
-        }, 200)
+        currentIndex = studyKeys.indexOf(studyKey)
+        swapStudy(studyKey, true)
       })
+    })
+
+    const nextBtn = document.getElementById('featured-next-btn')
+    nextBtn?.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % studyKeys.length
+      swapStudy(studyKeys[currentIndex])
     })
 
     return () => {

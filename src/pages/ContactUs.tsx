@@ -70,6 +70,12 @@ export default function ContactUs() {
           submitBtn.classList.remove('bg-primary', 'hover:bg-tertiary')
           submitBtn.classList.add('bg-green-600')
           form.reset()
+          setTimeout(() => {
+            submitBtn.innerHTML = 'Send Inquiry'
+            submitBtn.classList.remove('bg-green-600')
+            submitBtn.classList.add('bg-primary', 'hover:bg-tertiary')
+            submitBtn.disabled = false
+          }, 2500)
         } else {
           submitBtn.innerHTML = 'Failed - Try Again'
           submitBtn.disabled = false

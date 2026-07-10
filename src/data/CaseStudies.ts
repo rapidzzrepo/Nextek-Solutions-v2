@@ -28,8 +28,8 @@ export const html = `
 </div>
 <div class="lg:w-2/5 w-full h-[400px] rounded-lg overflow-hidden relative group cursor-pointer border border-outline-variant transition-all duration-700 opacity-100 translate-y-0 bg-surface-container">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 transition-all ease-in-out opacity-100 scale-100" data-alt="A sophisticated 3D abstract visualization representing complex network data architecture. Interconnected glass-like nodes and crystalline structures glow with faint purple and blue luminescence. The scene is rendered with deep depth of field against a pristine white background, conveying a sense of order, precision, and high-level software engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARF9G8_y6k6Vgpx295OH8n9RA5KsCislaSZYy8lFK0DJVeqwGoP4OZg1gQNvKGRy2UEqDIBoYKqA0kz3ltbv6I2Unt7wMbv5RRWsUhoa5OhR1IOm9IqIvNN7MxUsPO8OYEpuAvokgZuDGd1Y5JWJt4OIZQfI9oJltKOPJnHNEsZ0r2a2OTGotCG-oD5T6BC2ira1EC-Q4hOlY6Kt88yWhGAUAL0J5dy4kYP7iifsea9ESUx6vw-Kw" id="featured-img" onload="this.classList.remove('opacity-0', 'scale-95'); this.classList.add('opacity-100', 'scale-100'); this.parentElement.classList.remove('animate-pulse');" loading="eager" decoding="async" style="will-change: opacity, transform; transition: opacity 0.7s ease-in-out;">
-<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-5xl bg-white rounded-full p-4 shadow-xl">arrow_forward</span>
+<div class="absolute inset-0 flex items-center justify-center">
+<button id="featured-next-btn" class="material-symbols-outlined text-primary text-5xl bg-white/90 hover:bg-white rounded-full p-4 shadow-xl cursor-pointer transition-transform hover:scale-110 active:scale-95 select-none" aria-label="Next case study">arrow_forward</button>
 </div>
 </div>
 </div>
