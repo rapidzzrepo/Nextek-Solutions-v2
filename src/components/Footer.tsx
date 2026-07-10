@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-white/5 relative z-10">
-        <p className="text-surface-variant/60 font-label-md">© 2024 Nextek Sol (Inc). All rights reserved.</p>
+        <p className="text-surface-variant/60 font-label-md">© 2012 Nextek Sol (Inc). All rights reserved.</p>
       </div>
     </footer>
   )

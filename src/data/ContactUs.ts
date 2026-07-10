@@ -77,7 +77,7 @@ export const html = `
 </div>
 <div>
 <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Architecture Desk</p>
-<p class="font-sora font-semibold text-on-surface">+92 42 35218902</p>
+<p class="font-sora font-semibold text-on-surface">+92 321 8819634</p>
 </div>
 </div>
 <div class="group flex gap-5">
@@ -147,8 +147,8 @@ export const html = `
 <span class="bg-primary/10 text-primary px-2 py-1 rounded text-[10px] font-bold">HQ-01</span>
 </div>
 <p class="text-on-surface-variant text-sm leading-relaxed font-body-md">
-                            120 Broadway, 40th Floor<br/>
-                            Financial District, NY 10271<br/>
+                            6611 Comet Cir Apt 402<br/>
+                            Springfield, VA 22150<br/>
                             United States
                         </p>
 <div class="space-y-2 pt-4 border-t border-outline-variant/30">

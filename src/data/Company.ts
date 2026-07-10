@@ -1,21 +1,16 @@
 export const html = `
 <!-- Hero Section -->
-<section class="relative w-full overflow-hidden" id="company-hero">
+<section class="relative w-full overflow-hidden py-section-gap" id="company-hero">
 <canvas id="company-star-bg" class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer"></canvas>
-<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto">
-<div class="relative w-full h-[750px] rounded-xl overflow-hidden mb-12 group">
-<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent z-10"></div>
-<div class="relative z-20 h-full flex flex-col justify-center max-w-2xl px-12">
-<span class="text-primary font-label-md text-label-md mb-4 flex items-center gap-2">
-<span class="w-8 h-[1px] bg-primary"></span>
-                        WHO WE ARE
-                    </span>
-<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Built on Technical Authority.</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                        We don't just build software; we engineer infrastructure for the future. Nextek Sol combines high-precision development with sovereign cloud security to empower the world's most ambitious enterprises.
-                    </p>
-</div>
-</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto text-center">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary border border-primary/10 mb-8 font-label-sm text-label-sm uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    Who We Are
+                </span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight text-on-surface">Built on Technical Authority.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    We don't just build software; we engineer infrastructure for the future. Nextek Sol combines high-precision development with sovereign cloud security to empower the world's most ambitious enterprises.
+                </p>
 </div>
 </section>
 <!-- Core Values: Bento Grid -->
