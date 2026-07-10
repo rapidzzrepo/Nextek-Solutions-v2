@@ -50,6 +50,7 @@ export default function Intelligence() {
     const nav = document.querySelector('nav')
     const logo = document.querySelector('nav a img') as HTMLImageElement | null
     const navLinks = document.querySelectorAll('nav a:not([href="/contact"])')
+    const hamburgerBtn = document.getElementById('hamburger-btn')
     if (nav) {
       nav.classList.add('bg-black/60', 'border-white/10')
       nav.classList.remove('bg-surface/80', 'border-outline-variant/30')
@@ -63,6 +64,10 @@ export default function Intelligence() {
         link.classList.remove('text-on-surface-variant', 'hover:text-primary')
       }
     })
+    if (hamburgerBtn) {
+      hamburgerBtn.classList.add('text-white')
+      hamburgerBtn.classList.remove('text-on-surface-variant')
+    }
 
     return () => {
       cleanups.forEach(fn => fn())
@@ -80,6 +85,10 @@ export default function Intelligence() {
           link.classList.add('text-on-surface-variant', 'hover:text-primary')
         }
       })
+      if (hamburgerBtn) {
+        hamburgerBtn.classList.remove('text-white')
+        hamburgerBtn.classList.add('text-on-surface-variant')
+      }
     }
   }, [])
 

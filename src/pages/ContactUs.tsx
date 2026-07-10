@@ -57,6 +57,10 @@ export default function ContactUs() {
       submitBtn.innerHTML = 'Sending...'
 
       const formData = new FormData(form)
+      const systemDomain = formData.get('subject') as string || ''
+      formData.set('subject', 'New Inquiry from Nextek Sol Website')
+      formData.set('from_name', 'Nextek Sol Webapp')
+      formData.append('domain', systemDomain)
       formData.append('access_key', '540d0f5b-cde7-4326-936f-84a4adad9f82')
 
       try {

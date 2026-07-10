@@ -29,7 +29,7 @@ export const html = `
 <div class="grid md:grid-cols-2 gap-6">
 <div class="space-y-2 group">
 <label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant group-focus-within:text-primary transition-colors">First Name</label>
-<input class="w-full bg-surface border border-outline-variant/40 rounded-ROUND_EIGHT p-4 focus:border-primary focus:ring-0 outline-none transition-all text-on-surface font-body-md input-focus-ring" name="from_name" placeholder="Jane" required="" type="text"/>
+    <input class="w-full bg-surface border border-outline-variant/40 rounded-ROUND_EIGHT p-4 focus:border-primary focus:ring-0 outline-none transition-all text-on-surface font-body-md input-focus-ring" name="first_name" placeholder="Jane" required="" type="text"/>
 </div>
 <div class="space-y-2 group">
 <label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant group-focus-within:text-primary transition-colors">Last Name</label>
