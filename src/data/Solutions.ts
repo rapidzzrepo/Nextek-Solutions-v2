@@ -70,7 +70,7 @@ export const html = `
 <!-- Pillar 1: AI & ML -->
 <div class="grid md:grid-cols-2 gap-20 items-center mb-section-gap">
 <div class="order-2 md:order-1">
-<img alt="Intelligent Automation Visual" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida/AP1WRLsMfPK0uE5jdW-QXWmdSqfu4LnD31SMleEbjucrf3z5d-gpf7fRKrSz6V8W5nD-BlB3b10-lYSIWAU82pGOPsw_1kjrZK7osRBS1YfgKGjwSPvznBpPQJ3TUbrnmke2JjgE5HtRo7oBo0DE3jBfmKpznLKqLZViUI9ZwYDC0iN84l5N1Ojky78kBF-WDiOczq4d4cNXRAHNfEXqE_Kg9FJGSlLyjK5Dbb-BbpoTwM_Y74c7mKOEfEYkqQ">
+<img alt="Intelligent Automation Visual" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBydwNv-aEKyVxcguvHSipCE_EdSrLdoupvuxR-BxvkGsvTzLSyzY9MK5LD-Tn2qwSupCZE_hPh5r6TCWhqGWtG0NEE2Dj5J96lpI_Omd2XkN3REWG4-MG3t4JEhhcJOQJ0-fB0HEsvTXA9r6IftnNp8kbSmAdcnz9VhFQn-7LYNAOPnEo4_BsQIqE5-lIO1KgaOPwiC67q0DwNXDdut9R4j1xb16i-XVcSd3RtTlEPs8Vg_GlSiiA">
 </div>
 <div class="order-1 md:order-2">
 <div class="text-primary font-label-md uppercase tracking-widest mb-4">Pillar 01</div>
@@ -126,13 +126,13 @@ export const html = `
 </div>
 </div>
 <div>
-<img alt="Global Infrastructure Visual" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida/AP1WRLua9n_GkGEPqG0o3Rboy8E6vGmxCmohB1fFlJFUfVD2wQCjowitdz4Y9FR6odySnSifbVox7EcoUxboqcd-ciOvGpYHiIcdD85mE8WwxzB6DBbD1Rvv0SWkiLkemPCi0fOBuBhr8cQQ7daa4_zB0PoIUexkJzDZXNrXz6f3seOuIwzz5mPxta1Dl1AkKX7_SN1wezUl8_jS4C5hXPiBqD80RzXkIkUzgALSmkPxLhOi4EByrfd0QUqkSw">
+<img alt="Global Infrastructure Visual" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8XRzCYpojQJ3XKcVNugyatYXjMBLR3m5Yz1010a6rZpT3bbM0CnnXw1SzccuRwqhcUa7V2yqjVxSTzUaOrMjT781SnPzjRHV4wewX_89nH4R-Mu_GTgtVV3QHQMGfgOnxxF8uxJy__q4eWWlEo-PVvPe5bLiFL3iJbLYRdqpFq0JfTYD-EQ8NTeRvmy6SiW5yQhS7NlaEFRyZrwoKUtL9dRsjXq68IojzN4U0NSuuBz13l1JbxeA">
 </div>
 </div>
 <!-- Pillar 3: Ecosystems -->
 <div class="grid md:grid-cols-2 gap-20 items-center">
 <div class="order-2 md:order-1">
-<img alt="High Performance Ecosystems" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida/AP1WRLv-Mi4Qj2uxDG-zi5TWFeiNXXm3KDuAGHbOm3mIUAh1u2vntt80FfjfFUMJJ9ffLfy_ddjQduzj65NAtB4ls7j7vx1Zm5CzzArUqWJY3oDL_6nW4wAyOPZO_C24-IqpPavOoeQaep1zfFLZ_XCmawn9HO930_RS81q-K3FO76CP4MRP_sxfYf_oQjWL60lB_5X2QyvzCxlRmL_s-2hGyXhNi7rhexfmehQib_p_ODKiLG6gigVqc8UtIQ">
+<img alt="High Performance Ecosystems" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARF9G8_y6k6Vgpx295OH8n9RA5KsCislaSZYy8lFK0DJVeqwGoP4OZg1gQNvKGRy2UEqDIBoYKqA0kz3ltbv6I2Unt7wMbv5RRWsUhoa5OhR1IOm9IqIvNN7MxUsPO8OYEpuAvokgZuDGd1Y5JWJt4OIZQfI9oJltKOPJnHNEsZ0r2a2OTGotCG-oD5T6BC2ira1EC-Q4hOlY6Kt88yWhGAUAL0J5dy4kYP7iifsea9ESUx6vw-Kw">
 </div>
 <div class="order-1 md:order-2">
 <div class="text-primary font-label-md uppercase tracking-widest mb-4">Pillar 03</div>
@@ -253,12 +253,12 @@ export const html = `
                 Join the ranks of elite tech organizations. Our architects are ready to dissect your current infrastructure and map a path to peak performance.
             </p>
 <div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
-<button class="bg-white text-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-surface transition-all transform hover:-translate-y-1">
+<a class="bg-white text-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-surface transition-all transform hover:-translate-y-1" href="/contact">
                     Schedule a Technical Scoping Session
-                </button>
-<button class="bg-transparent border-2 border-white text-on-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/10 transition-all">
+                </a>
+<a class="bg-transparent border-2 border-white text-on-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/10 transition-all" href="/case-studies">
                     View Technical Docs
-                </button>
+                </a>
 </div>
 </div>
 </section>

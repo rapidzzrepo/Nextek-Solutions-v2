@@ -372,7 +372,7 @@ export const html = `
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 </div>
-<p class="font-body-lg mb-8 italic text-on-surface">"Nextek Sol didn't just provide a service; they architected a transformation. Their engineering precision and refusal to settle for 'good enough' is what differentiates them from every other firm we've engaged."</p>
+<p class="font-body-lg mb-8 italic text-on-surface">"nextek Sol didn't just provide a service, they architected a total transformation. Their engineering presision and refusal to settle for good enough is what diferentiates them from every other firm we've ever worked with."</p>
 <div>
 <p class="font-headline-lg text-body-lg">Marcus Vancity</p>
 <p class="font-label-md text-on-surface-variant">CTO, Global Infra Dynamics</p>
@@ -387,7 +387,7 @@ export const html = `
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 </div>
-<p class="font-body-lg mb-8 italic text-on-surface">"The level of technical rigor Nextek Sol brought to our cloud migration was unprecedented. They didn't just move our workloads; they optimized our entire cost-to-performance ratio."</p>
+<p class="font-body-lg mb-8 italic text-on-surface">"the level of technical rigor nextek brought to our cloud migration was un-precedented. they didn't just move our workloads, they optimized our entire cost to performance ratio."</p>
 <div>
 <p class="font-headline-lg text-body-lg">Sarah Chen</p>
 <p class="font-label-md text-on-surface-variant">Head of Platform, FinStream</p>
@@ -402,7 +402,7 @@ export const html = `
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 </div>
-<p class="font-body-lg mb-8 italic text-on-surface">"Architecting for 99.999% availability is a massive challenge. Nextek Sol delivered a resilient infrastructure that has weathered every peak without a single millisecond of downtime."</p>
+<p class="font-body-lg mb-8 italic text-on-surface">"architecting for 99.999% availability is a massive chalenge. Nextek Sol delivered a resilient infrastructure that has weatheredevery peak without a single millisecond of downtime."</p>
 <div>
 <p class="font-headline-lg text-body-lg">David Vance</p>
 <p class="font-label-md text-on-surface-variant">VP Infrastructure, Global Connect</p>

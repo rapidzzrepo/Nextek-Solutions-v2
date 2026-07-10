@@ -190,8 +190,8 @@ export const html = `
                         Join the fleet of technical leaders who trust Nextek Sol for their most critical infrastructure projects.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-on-primary-container text-primary-container px-10 py-4 rounded-xl font-headline-lg hover:opacity-90 transition-all">Start Scoping</button>
-<button class="border border-on-primary-container/30 text-on-primary-container px-10 py-4 rounded-xl font-headline-lg hover:bg-on-primary-container/10 transition-all">Download Thesis</button>
+<a class="bg-on-primary-container text-primary-container px-10 py-4 rounded-xl font-headline-lg hover:opacity-90 transition-all" href="/contact">Start Scoping</a>
+<a class="border border-on-primary-container/30 text-on-primary-container px-10 py-4 rounded-xl font-headline-lg hover:bg-on-primary-container/10 transition-all" href="/case-studies">Download Thesis</a>
 </div>
 </div>
 </div>

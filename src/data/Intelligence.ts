@@ -160,7 +160,7 @@ export const html = `
 <div class="min-w-full snap-center px-4">
 <div class="max-w-4xl mx-auto text-center">
 <blockquote class="font-headline-xl text-headline-xl md:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
-                            "Nextek Sol didn't just provide a service; they architected a transformation. Their engineering precision and refusal to settle for 'good enough' is what differentiates them from every other firm we've engaged."
+                            "NT Sol didn't just provide us a service, they literally architected our whole transformation. their engineering prescision and refusal to settle for good enough is what sets them apart from every other firm we've worked with."
                         </blockquote>
 <div class="flex flex-col items-center">
 <div class="w-16 h-16 rounded-full bg-surface-variant mb-4 overflow-hidden border-2 border-primary">
@@ -177,7 +177,7 @@ export const html = `
 <div class="min-w-full snap-center px-4">
 <div class="max-w-4xl mx-auto text-center">
 <blockquote class="font-headline-xl text-headline-xl md:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
-                            "The level of technical rigor Nextek Sol brought to our cloud migration was unprecedented. They didn't just move our workloads; they optimized our entire cost-to-performance ratio."
+                            "the level of technical rigor Nextek Sol brought to our cloud migration was unprecidented. they didnt just move our workloads, they optimized our entire cost to performance ratio."
                         </blockquote>
 <div class="flex flex-col items-center">
 <div class="w-16 h-16 rounded-full bg-surface-variant mb-4 flex items-center justify-center border-2 border-primary text-primary font-bold text-xl">SC</div>
@@ -192,7 +192,7 @@ export const html = `
 <div class="min-w-full snap-center px-4">
 <div class="max-w-4xl mx-auto text-center">
 <blockquote class="font-headline-xl text-headline-xl md:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
-                            "Architecting for 99.999% availability is a massive challenge. Nextek Sol delivered a resilient infrastructure that has weathered every peak without a single millisecond of downtime."
+                            "architecting for 99.999% availability is a massive challenge. NT Sol delivered a resilient infrastructure that has weathered every peak without a single milisecond of downtime."
                         </blockquote>
 <div class="flex flex-col items-center">
 <div class="w-16 h-16 rounded-full bg-surface-variant mb-4 flex items-center justify-center border-2 border-primary text-primary font-bold text-xl">DV</div>
@@ -259,9 +259,9 @@ export const html = `
 <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-50 group-hover:opacity-100 transition-opacity duration-1000"></div>
 <div class="relative z-10">
 <h2 class="font-headline-xl text-display-lg-mobile md:text-headline-xl text-on-primary mb-8">Ready to engineer your <br> next horizon?</h2>
-<button class="bg-on-primary text-primary px-10 py-5 rounded-xl font-headline-lg text-headline-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-black/10">
+<a class="bg-on-primary text-primary px-10 py-5 rounded-xl font-headline-lg text-headline-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-black/10" href="/contact">
                 Subscribe to our Deep-Tech Insights
-            </button>
+            </a>
 </div>
 </div>
 </section>
