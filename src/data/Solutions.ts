@@ -1,6 +1,6 @@
 export const html = `
 <!-- Hero Section -->
-<header class="relative w-full overflow-hidden min-h-[800px] flex items-center" id="solutions-hero">
+<header class="relative w-full overflow-hidden min-h-[600px] md:min-h-[800px] flex items-center" id="solutions-hero">
 <canvas id="solutions-star-bg" class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer"></canvas>
 <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-[100px] pointer-events-none z-[1] transition-all duration-1000 opacity-100 translate-y-0"></div>
 <div class="relative z-10 px-margin-mobile md:px-margin-desktop pt-24 pb-section-gap max-w-container-max mx-auto">
@@ -26,7 +26,7 @@ export const html = `
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="solutions-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
 <div class="text-center mb-16">
 <h2 class="font-headline-xl text-headline-xl mb-4 text-white">Engineered with <span class="text-primary-fixed-dim">Precision</span></h2>
 <p class="text-white/50 max-w-2xl mx-auto">Our core technology stack is selected for performance, safety, and global scalability.</p>
@@ -61,14 +61,14 @@ export const html = `
 <button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">View Full Stack</button>
 </div>
 </div>
-</section><section class="px-margin-mobile md:px-margin-desktop py-section-gap bg-surface-container-low transition-all duration-1000 opacity-100 translate-y-0">
+</section><section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap bg-surface-container-low transition-all duration-1000 opacity-100 translate-y-0">
 <div class="max-w-container-max mx-auto">
-<div class="text-center mb-24">
+<div class="text-center mb-12 md:mb-24">
 <h2 class="font-headline-xl text-headline-xl mb-4">Strategic Engineering Pillars</h2>
 <p class="text-on-surface-variant max-w-2xl mx-auto">Purpose-built frameworks that consolidate specialized expertise into outcome-driven solutions.</p>
 </div>
 <!-- Pillar 1: AI & ML -->
-<div class="grid md:grid-cols-2 gap-20 items-center mb-section-gap">
+<div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center mb-16 md:mb-section-gap">
 <div class="order-2 md:order-1">
 <img alt="Intelligent Automation Visual" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBydwNv-aEKyVxcguvHSipCE_EdSrLdoupvuxR-BxvkGsvTzLSyzY9MK5LD-Tn2qwSupCZE_hPh5r6TCWhqGWtG0NEE2Dj5J96lpI_Omd2XkN3REWG4-MG3t4JEhhcJOQJ0-fB0HEsvTXA9r6IftnNp8kbSmAdcnz9VhFQn-7LYNAOPnEo4_BsQIqE5-lIO1KgaOPwiC67q0DwNXDdut9R4j1xb16i-XVcSd3RtTlEPs8Vg_GlSiiA">
 </div>
@@ -99,7 +99,7 @@ export const html = `
 </div>
 </div>
 <!-- Pillar 2: Global Infrastructure -->
-<div class="grid md:grid-cols-2 gap-20 items-center mb-section-gap">
+<div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center mb-16 md:mb-section-gap">
 <div>
 <div class="text-primary font-label-md uppercase tracking-widest mb-4">Pillar 02</div>
 <h3 class="font-headline-xl text-headline-xl mb-6">Global Resilient Infrastructure</h3>
@@ -130,7 +130,7 @@ export const html = `
 </div>
 </div>
 <!-- Pillar 3: Ecosystems -->
-<div class="grid md:grid-cols-2 gap-20 items-center">
+<div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
 <div class="order-2 md:order-1">
 <img alt="High Performance Ecosystems" class="rounded-2xl shadow-2xl w-full object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARF9G8_y6k6Vgpx295OH8n9RA5KsCislaSZYy8lFK0DJVeqwGoP4OZg1gQNvKGRy2UEqDIBoYKqA0kz3ltbv6I2Unt7wMbv5RRWsUhoa5OhR1IOm9IqIvNN7MxUsPO8OYEpuAvokgZuDGd1Y5JWJt4OIZQfI9oJltKOPJnHNEsZ0r2a2OTGotCG-oD5T6BC2ira1EC-Q4hOlY6Kt88yWhGAUAL0J5dy4kYP7iifsea9ESUx6vw-Kw">
 </div>
@@ -163,7 +163,7 @@ export const html = `
 </div>
 </section>
 <!-- Vertical Market Focus -->
-<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div class="max-w-xl">
 <h2 class="font-headline-xl text-headline-xl mb-4">Domain Specialization</h2>
@@ -200,11 +200,11 @@ export const html = `
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="protocol-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
-<div class="grid md:grid-cols-2 gap-20 items-center">
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
 <div>
 <h2 class="font-headline-xl text-headline-xl text-white mb-8">Our Engineering Protocol</h2>
-<div class="space-y-12">
+<div class="space-y-8 md:space-y-12">
 <div class="flex gap-6 relative">
 <div class="absolute left-5 top-10 bottom-[-40px] w-px bg-primary/30"></div>
 <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10">1</div>
@@ -232,10 +232,10 @@ export const html = `
 </div>
 <div class="relative flex justify-center">
 <!-- Complex Architectural Visual placeholder with CSS -->
-<div class="w-[400px] h-[400px] border-2 border-primary/20 rounded-full flex items-center justify-center animate-spin-slow">
-<div class="w-[300px] h-[300px] border-2 border-primary/40 border-dashed rounded-full flex items-center justify-center animate-spin-reverse">
-<div class="w-24 h-24 bg-primary rounded-2xl flex items-center justify-center shadow-[0_0_50px_rgba(99,14,212,0.5)]">
-<span class="material-symbols-outlined text-white text-[48px]">terminal</span>
+<div class="w-[250px] h-[250px] md:w-[400px] md:h-[400px] border-2 border-primary/20 rounded-full flex items-center justify-center animate-spin-slow">
+<div class="w-[180px] h-[180px] md:w-[300px] md:h-[300px] border-2 border-primary/40 border-dashed rounded-full flex items-center justify-center animate-spin-reverse">
+<div class="w-16 h-16 md:w-24 md:h-24 bg-primary rounded-2xl flex items-center justify-center shadow-[0_0_50px_rgba(99,14,212,0.5)]">
+<span class="material-symbols-outlined text-white text-[32px] md:text-[48px]">terminal</span>
 </div>
 </div>
 </div>
@@ -244,19 +244,19 @@ export const html = `
 </div>
 </section>
 <!-- Final CTA Section -->
-<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto text-center transition-all duration-1000 opacity-100 translate-y-0">
-<div class="bg-primary rounded-[2rem] p-16 relative overflow-hidden shadow-2xl">
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto text-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="bg-primary rounded-[2rem] p-8 md:p-16 relative overflow-hidden shadow-2xl">
 <!-- Abstract pattern overlay -->
 <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,white_0%,transparent_70%)]"></div>
 <h2 class="font-display-lg text-headline-xl md:text-display-lg text-on-primary mb-6 relative z-10">Ready to Scale?</h2>
-<p class="text-on-primary/80 font-body-lg max-w-2xl mx-auto mb-10 relative z-10">
+<p class="text-on-primary/80 font-body-lg max-w-2xl mx-auto mb-6 md:mb-10 relative z-10">
                 Join the ranks of elite tech organizations. Our architects are ready to dissect your current infrastructure and map a path to peak performance.
             </p>
 <div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
-<a class="bg-white text-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-surface transition-all transform hover:-translate-y-1" href="/contact">
+<a class="bg-white text-primary px-6 md:px-10 py-4 md:py-5 rounded-lg font-bold text-base md:text-lg hover:bg-surface transition-all transform hover:-translate-y-1" href="/contact">
                     Schedule a Technical Scoping Session
                 </a>
-<a class="bg-transparent border-2 border-white text-on-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/10 transition-all" href="/case-studies">
+<a class="bg-transparent border-2 border-white text-on-primary px-6 md:px-10 py-4 md:py-5 rounded-lg font-bold text-base md:text-lg hover:bg-white/10 transition-all" href="/case-studies">
                     View Technical Docs
                 </a>
 </div>

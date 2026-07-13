@@ -57,16 +57,20 @@ export default function ContactUs() {
       submitBtn.innerHTML = 'Sending...'
 
       const formData = new FormData(form)
-      const systemDomain = formData.get('subject') as string || ''
-      formData.set('subject', 'New Inquiry from Nextek Sol Website')
-      formData.set('from_name', 'Nextek Sol Webapp')
-      formData.append('domain', systemDomain)
-      formData.append('access_key', '540d0f5b-cde7-4326-936f-84a4adad9f82')
+      const payload = {
+        first_name: formData.get('first_name') || '',
+        last_name: formData.get('last_name') || '',
+        from_email: formData.get('from_email') || '',
+        company: formData.get('company') || '',
+        subject: formData.get('subject') || '',
+        message: formData.get('message') || ''
+      }
 
       try {
-        const res = await fetch('https://api.web3forms.com/submit', {
+        const res = await fetch('/api/contact', {
           method: 'POST',
-          body: formData
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
         })
         const data = await res.json()
         if (data.success) {

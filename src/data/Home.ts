@@ -1,9 +1,9 @@
 export const html = `
 <!-- 1. Hero Section -->
-<section class="relative min-h-[800px] flex items-center overflow-hidden bg-surface py-section-gap" id="hero-section">
+<section class="relative min-h-[750px] md:min-h-[800px] flex items-center overflow-hidden bg-surface py-16 md:py-section-gap" id="hero-section">
 <!-- Particle System Background (Optimized Canvas) -->
 <canvas class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer" id="star-background" width="2600" height="1842" style="width: 1300px; height: 921px;"></canvas>
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10 gap-gutter items-center flex flex-col">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 gap-gutter items-center flex flex-col">
 <div class="space-y-8 text-center">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md mx-auto">
 <span class="relative flex h-2 w-2">
@@ -31,8 +31,8 @@ export const html = `
 </div>
 </section>
 <!-- 2. Certifications Marquee -->
-<div class="bg-surface-container-low py-12 border-y border-outline-variant/30 overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-surface-container-low py-8 md:py-12 border-y border-outline-variant/30 overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-12">
 <p class="font-label-md text-on-surface-variant/60 uppercase tracking-widest">Performance Metrics &amp; Scale</p>
 </div>
@@ -57,7 +57,7 @@ export const html = `
 </div>
 </div>
 <!-- 3. Engineering Excellence Grid -->
-<section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
+<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div class="max-w-2xl">
 <h2 class="font-display-lg text-headline-xl mb-4">Engineering Excellence Across Every Domain</h2>
@@ -123,15 +123,15 @@ export const html = `
 </div>
 </section>
 <!-- 4. Animated Stats -->
-<div class="bg-surface-container-low py-12 border-y border-outline-variant/30 overflow-hidden"><div class="max-w-container-max mx-auto px-margin-desktop"><div class="text-center mb-12"><p class="font-label-md text-on-surface-variant/60 uppercase tracking-widest">Technical Certifications</p></div><div class="flex flex-col gap-8"><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="ISO 27001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">ISO 27001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 3.png" alt="GCP Professional" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">GCP Professional</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 4.png" alt="CKA Kubernetes" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">CKA Kubernetes</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="HIPAA Compliant" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">HIPAA Compliant</span></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/11.png" alt="ISO 9001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">ISO 9001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/123.jpg" alt="PCI DSS" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">PCI DSS</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/goodFirms.png" alt="GoodFirms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">GoodFirms</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/top-firms.png" alt="Top Firms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">Top Firms</span></div></div></div></div></div>
-<section class="bg-[#0a0a0a] py-20 relative overflow-hidden" id="marquee-star-section">
+<div class="bg-surface-container-low py-8 md:py-12 border-y border-outline-variant/30 overflow-hidden"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"><div class="text-center mb-12"><p class="font-label-md text-on-surface-variant/60 uppercase tracking-widest">Technical Certifications</p></div><div class="flex flex-col gap-8"><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="ISO 27001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">ISO 27001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 3.png" alt="GCP Professional" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">GCP Professional</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 4.png" alt="CKA Kubernetes" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">CKA Kubernetes</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="HIPAA Compliant" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">HIPAA Compliant</span></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/11.png" alt="ISO 9001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">ISO 9001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/123.jpg" alt="PCI DSS" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">PCI DSS</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/goodFirms.png" alt="GoodFirms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">GoodFirms</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/top-firms.png" alt="Top Firms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">Top Firms</span></div></div></div></div></div>
+<section class="bg-[#0a0a0a] py-12 md:py-20 relative overflow-hidden" id="marquee-star-section">
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="industry-leaders-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop mb-12 relative z-10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 relative z-10">
 <p class="font-label-md text-surface-variant/40 uppercase tracking-[0.2em] text-center">Engineered with Industry Leaders</p>
 </div>
-<div class="marquee relative flex overflow-hidden select-none gap-16 z-10">
+<div class="marquee relative flex overflow-hidden select-none gap-8 md:gap-16 z-10">
 <div class="marquee-content"><img alt="Keiser Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/KEISER.png"><img alt="Spivi Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/SPIN.png"><img alt="BeaverFit Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/BEAVER-FIT.png"><img alt="LLAX Agarrage" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/LLAXAgarrage-white.png"><img alt="Lantern Finance" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Lantern-Finance-white.png"><img alt="SafeSite USA" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/SafeSiteUSA-1-1-p-500.png"><img alt="Success.ai" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Success.ai-white.png"><img alt="Trove Green" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Trove_Green-white-p-500.png"><img alt="Casting Pax" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/castingPax-copy.png"><img alt="OtherMind" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/otherMind.png"></div>
 <div aria-hidden="true" class="marquee-content"><img alt="Keiser Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/KEISER.png"><img alt="Spivi Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/SPIN.png"><img alt="BeaverFit Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/BEAVER-FIT.png"><img alt="LLAX Agarrage" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/LLAXAgarrage-white.png"><img alt="Lantern Finance" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Lantern-Finance-white.png"><img alt="SafeSite USA" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/SafeSiteUSA-1-1-p-500.png"><img alt="Success.ai" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Success.ai-white.png"><img alt="Trove Green" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Trove_Green-white-p-500.png"><img alt="Casting Pax" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/castingPax-copy.png"><img alt="OtherMind" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/otherMind.png"></div>
 </div>
@@ -142,7 +142,7 @@ export const html = `
 <div class="lg:w-2/3 grid grid-rows-2 gap-gutter">
 <div class="grid md:grid-cols-2 gap-gutter">
 <!-- Neural Architectures -->
-<div class="bento-item rounded-xl overflow-hidden relative group">
+<div class="bento-item rounded-xl overflow-hidden relative group min-h-[200px] md:min-h-0">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDj0WWkwnt5Py1bSo5sELqq8me4AwFnpLughZWogTZtIjck31rS3X86zCQj7bSsqkwJVI6vKFv74cgOwxvKWVvNxlMQK_PN2AhvEIfJCx1h6TiusrGWUc5UiacYVcYg9Jaqul_84SniU6O-uQsVpuHI7djuBSYjd7m22Ik8EUQwxh0sUxPDAcvsNGVh5UPjgz5prUbfTrIUG5qHPSRarIsCUJlhFQNIDVMleVhOSDTHBSKqCKNNjCg');"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-8 flex flex-col justify-end">
 <span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full w-fit mb-4 uppercase">Deep Learning</span>
@@ -150,7 +150,7 @@ export const html = `
 </div>
 </div>
 <!-- Predictive Analytics -->
-<div class="bento-item rounded-xl overflow-hidden relative group">
+<div class="bento-item rounded-xl overflow-hidden relative group min-h-[200px] md:min-h-0">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-4NoKqh5gZbYY18yErxRs3zi8pv0RlqHT1l762oUE8CE3UGpfrA2UGRegMfVPHCOYoJN2W8LDtsKU_S3DaeYEVRWszvTF86joheg9riIUO3M9fBwPEwvWYvt6GfV7aGWlrWjQdovB5k9kcT3FNlnCnT9eQUlA1U6T25PIGB1E0IU_LiGtGxFblQ9ilQv_1LvB9AYX0lZuWRxdsfdkVMxbaOZ5L0VJ7vxwHKGgjm9nhGy837qcD-U');"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-8 flex flex-col justify-end">
 <span class="bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full w-fit mb-4 uppercase">Big Data</span>
@@ -159,7 +159,7 @@ export const html = `
 </div>
 </div>
 <!-- Cognitive Automation -->
-<div class="bento-item rounded-xl overflow-hidden relative group">
+<div class="bento-item rounded-xl overflow-hidden relative group min-h-[200px] md:min-h-0">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIrhD9kC9Q8my4_gQOVwqBJuTCGQBFN8w94ljRSwp5unnmgN9LJOvgbdyBuNwGVQhyHhv6NONMbQssp53PsLnaqBbEdG-l7gCgZL4nBygCI2Q2JqSzHfXqclz1uzDJxVY1Qk12lf3xh8FHT5gzH2uWXl-YtcjisHYXKnoNw7vtcc4vYXLcbziRV3UdsY8uGU-GDJ3Lbm2TusGTTv5ZFQKFs90qjCUVt2lhaeEkLdiyyxqdLRzRPO0');"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-8 flex flex-col justify-end">
 <span class="bg-tertiary text-white text-[10px] font-bold px-3 py-1 rounded-full w-fit mb-4 uppercase">NLP</span>
@@ -175,8 +175,8 @@ export const html = `
 </div>
 </section>
 <!-- 8. Success Stories Carousel -->
-<section class="py-section-gap overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-desktop mb-16 flex justify-between items-end">
+<section class="py-16 md:py-section-gap overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 flex justify-between items-end">
 <div>
 <h2 class="font-display-lg text-headline-xl">Success Stories</h2>
 <p class="font-body-lg text-on-surface-variant">Real-world impact across global markets.</p>
@@ -190,7 +190,7 @@ export const html = `
 </button>
 </div>
 </div>
-<div class="flex gap-gutter px-margin-desktop transition-transform duration-500 ease-in-out cursor-grab active:cursor-grabbing accelerated-layer" id="studyContainer">
+<div class="flex gap-gutter px-margin-mobile md:px-margin-desktop transition-transform duration-500 ease-in-out cursor-grab active:cursor-grabbing accelerated-layer" id="studyContainer">
 <!-- Study 1 -->
 <div class="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-8 flex flex-col md:flex-row gap-8 accelerated-layer">
 <div class="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shrink-0">
@@ -239,12 +239,12 @@ export const html = `
 </div>
 </section>
 <!-- 9. Industry Solutions (DARK TABBED) -->
-<section class="py-section-gap relative overflow-hidden bg-[#000000]" id="industry-solutions-section">
+<section class="py-16 md:py-section-gap relative overflow-hidden bg-[#000000]" id="industry-solutions-section">
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="industry-solutions-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
-<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 <div>
 <h2 class="font-display-lg text-headline-xl text-white mb-8">Industry Solutions</h2>
 <div class="space-y-4">
@@ -262,7 +262,7 @@ export const html = `
 </button>
 </div>
 </div>
-<div class="p-12 dark-glass rounded-3xl min-h-[400px] flex flex-col justify-center accelerated-layer" id="tab-content">
+<div class="p-6 md:p-12 dark-glass rounded-3xl min-h-[300px] md:min-h-[400px] flex flex-col justify-center accelerated-layer" id="tab-content">
 <div class="tab-content-item" id="content-0">
 <h3 class="font-display-lg text-headline-xl text-primary-fixed-dim mb-6">Fintech Resilience</h3>
 <div class="space-y-6">
@@ -307,11 +307,11 @@ export const html = `
 </div>
 </section>
 <!-- 10. Transforming Ideas (Product Showcases) -->
-<section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
-<h2 class="font-display-lg text-headline-xl mb-16 text-center">Transforming Ideas into Ecosystems</h2>
-<div class="space-y-32">
+<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl mb-8 md:mb-16 text-center">Transforming Ideas into Ecosystems</h2>
+<div class="space-y-16 md:space-y-32">
 <!-- Product 1 -->
-<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
 <div class="lg:w-1/2 order-2 lg:order-1">
 <div class="flex items-center gap-4 mb-6">
 <div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center font-bold text-primary">01</div>
@@ -333,7 +333,7 @@ export const html = `
 </div>
 </div>
 <!-- Product 2 -->
-<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
 <div class="lg:w-1/2">
 <div class="relative">
 <div class="absolute -inset-4 bg-secondary/10 blur-2xl rounded-full"></div>
@@ -357,8 +357,8 @@ export const html = `
 </div>
 </section>
 <!-- 11. Testimonials -->
-<section class="bg-surface-container py-section-gap">
-<div class="max-w-container-max mx-auto px-margin-desktop">
+<section class="bg-surface-container py-16 md:py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="text-center mb-16">
 <h2 class="font-display-lg text-headline-xl">Trusted by the Elite</h2>
 </div>
@@ -412,16 +412,16 @@ export const html = `
 </div>
 </section>
 <!-- 12. Absolute Availability Section -->
-<section class="py-section-gap relative overflow-hidden bg-black" id="resilient-infrastructure-section">
+<section class="py-16 md:py-section-gap relative overflow-hidden bg-black" id="resilient-infrastructure-section">
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="resilient-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
-<div class="p-12 rounded-3xl border border-primary/20 bg-transparent backdrop-blur-sm accelerated-layer"><div class="grid lg:grid-cols-10 gap-12 items-center"><div class="lg:col-span-6"><div class="max-w-3xl mb-16"><span class="text-primary-fixed-dim font-label-md uppercase tracking-widest mb-4 block">Zero-Downtime Data Sovereignty</span><h2 class="font-display-lg text-headline-xl mb-6 text-white font-bold">Resilient Infrastructure for <span class="text-primary-fixed-dim">Absolute Availability</span></h2><p class="font-body-lg text-surface-variant/80">Engineered for absolute survival. Our decentralized architecture ensures total resilience against physical infrastructure failure, regional conflict, and kinetic threats. In the event of a total localized catastrophe, your systems remain operational and transition instantly to surviving global nodes.</p></div><div class="grid md:grid-cols-3 gap-6"><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">shield</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Attack Resilience</h4><p class="text-[14px] text-surface-variant/70">Neutralizing kinetic and cyber threats at the edge.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">dynamic_form</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Automatic Failover</h4><p class="text-[14px] text-surface-variant/70">Instant redirection prevents site crashes.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">database</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Stateful Recovery</h4><p class="text-[14px] text-surface-variant/70">Real-time data replication across zones.</p></div></div></div><div class="lg:col-span-4"><div class="glass-card p-4 rounded-3xl shadow-xl border border-white/10 overflow-hidden group accelerated-layer"><div class="aspect-video rounded-2xl overflow-hidden relative"><img alt="Global resilient infrastructure network visualization" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ_tXR0cMmkW-Hgc9Hnx4_1kI045Vgfy8ARrPSCv6JkjvwsQ-WQ6R7FqdgRR-EmZ5cDP60pOGruhAvb_wwyiurXDsvp5Qo9TGGzdepPC0z1LB-Z89_EfRRKlHb1litcenCLh0PIUDO__9dN_7uXWh5HaWSqg7-6vfxkhZuaYESXMLuRBqYiaWvcwTkUNVKJSRhvhHRXPa2bvtQ8FuZj9iJove9riys9joN3U8wUqvt8ZSdMtz4JA0"></div></div></div></div></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="p-6 md:p-12 rounded-3xl border border-primary/20 bg-transparent backdrop-blur-sm accelerated-layer"><div class="grid lg:grid-cols-10 gap-8 md:gap-12 items-center"><div class="lg:col-span-6"><div class="max-w-3xl mb-8 md:mb-16"><span class="text-primary-fixed-dim font-label-md uppercase tracking-widest mb-4 block">Zero-Downtime Data Sovereignty</span><h2 class="font-display-lg text-headline-xl mb-6 text-white font-bold">Resilient Infrastructure for <span class="text-primary-fixed-dim">Absolute Availability</span></h2><p class="font-body-lg text-surface-variant/80">Engineered for absolute survival. Our decentralized architecture ensures total resilience against physical infrastructure failure, regional conflict, and kinetic threats. In the event of a total localized catastrophe, your systems remain operational and transition instantly to surviving global nodes.</p></div><div class="grid md:grid-cols-3 gap-6"><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">shield</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Attack Resilience</h4><p class="text-[14px] text-surface-variant/70">Neutralizing kinetic and cyber threats at the edge.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">dynamic_form</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Automatic Failover</h4><p class="text-[14px] text-surface-variant/70">Instant redirection prevents site crashes.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">database</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Stateful Recovery</h4><p class="text-[14px] text-surface-variant/70">Real-time data replication across zones.</p></div></div></div><div class="lg:col-span-4"><div class="glass-card p-4 rounded-3xl shadow-xl border border-white/10 overflow-hidden group accelerated-layer"><div class="aspect-video rounded-2xl overflow-hidden relative"><img alt="Global resilient infrastructure network visualization" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ_tXR0cMmkW-Hgc9Hnx4_1kI045Vgfy8ARrPSCv6JkjvwsQ-WQ6R7FqdgRR-EmZ5cDP60pOGruhAvb_wwyiurXDsvp5Qo9TGGzdepPC0z1LB-Z89_EfRRKlHb1litcenCLh0PIUDO__9dN_7uXWh5HaWSqg7-6vfxkhZuaYESXMLuRBqYiaWvcwTkUNVKJSRhvhHRXPa2bvtQ8FuZj9iJove9riys9joN3U8wUqvt8ZSdMtz4JA0"></div></div></div></div></div>
 </div>
 </section>
-<section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
-<h2 class="font-display-lg text-headline-xl mb-16 text-center">Engineered with Precision</h2>
+<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl mb-8 md:mb-16 text-center">Engineered with Precision</h2>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
 <div class="flex flex-col items-center p-6 border border-outline-variant/30 rounded-xl hover:border-primary/40 transition-all accelerated-layer">
 <span class="material-symbols-outlined text-4xl mb-3 text-on-surface-variant">terminal</span>
@@ -454,9 +454,9 @@ export const html = `
 </div>
 </section>
 <!-- 13. Insights -->
-<section class="py-section-gap bg-surface">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="flex justify-between items-end mb-16">
+<section class="py-16 md:py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-4 md:gap-0">
 <div>
 <h2 class="font-display-lg text-headline-xl">Latest Insights</h2>
 <p class="font-body-lg text-on-surface-variant">Thought leadership on engineering culture.</p>

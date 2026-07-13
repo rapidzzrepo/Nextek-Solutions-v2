@@ -11,7 +11,7 @@ export const html = `
 <span class="inline-block px-3 py-1 mb-6 bg-white/10 text-primary-fixed-dim backdrop-blur-md border border-white/10 rounded-full font-label-md text-label-md tracking-wider uppercase">
                     Intelligence Hub
                 </span>
-<h1 class="font-headline-xl text-[48px] md:text-display-lg font-extrabold text-white leading-tight mb-8">
+<h1 class="font-headline-xl text-display-lg-mobile md:text-display-lg font-extrabold text-white leading-tight mb-8">
                     Engineering Intelligence <span class="text-primary-fixed-dim">at Scale</span>.
                 </h1>
 <p class="font-body-lg text-body-lg text-white/80 mb-10 max-w-xl">
@@ -26,7 +26,7 @@ export const html = `
                     </button>
 </div>
 </div>
-<div class="relative hidden lg:block reveal-on-scroll visible">
+<div class="relative hidden md:block reveal-on-scroll visible">
 <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 backdrop-blur-sm">
 <img alt="AI-driven engineering ecosystem diagram" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAMNq-h-naE35JipZb9nW-xuxoagbAYRK-NW-Whm7c5b0amU0bBsHn0xd1oQyN-1TgecZqlJ7JWbpu3seQNAvFV9W2bUP6f0Ga1PeEeWZxERN6uyGAP99-RgQPceq3roRkZL3lwvhJPD_UtlY4LAsymmxj8hEHEoorxddBp-B5qRDDLhOmwCvKCEb50NfO_Zy2WcStRi9fHl3Dk8pWlvOoP1RLSLjgH6BJadullyjaQBEOIQd_PmA">
 </div>
@@ -40,7 +40,7 @@ export const html = `
 </div>
 </section>
 <!-- Content Section: Technical Insights -->
-<section class="py-[120px] container mx-auto px-6 md:px-[48px] max-w-[1280px]">
+<section class="py-16 md:py-[120px] container mx-auto px-6 md:px-[48px] max-w-[1280px]">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div class="max-w-2xl">
 <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Technical Insights</h2>
@@ -144,7 +144,7 @@ export const html = `
 </div>
 </section>
 <!-- Testimonial Carousel Highlight -->
-<section class="py-[120px] bg-[#0a0a0a] relative overflow-hidden" id="testimonial-star-section">
+<section class="py-16 md:py-[120px] bg-[#0a0a0a] relative overflow-hidden" id="testimonial-star-section">
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="testimonial-precision-canvas" class="w-full h-full block"></canvas>
 </div>
@@ -159,7 +159,7 @@ export const html = `
 <!-- Testimonial 1 -->
 <div class="min-w-full snap-center px-4">
 <div class="max-w-4xl mx-auto text-center">
-<blockquote class="font-headline-xl text-headline-xl md:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
+<blockquote class="font-headline-xl text-xl md:text-headline-xl lg:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
                             "NT Sol didn't just provide us a service, they literally architected our whole transformation. their engineering prescision and refusal to settle for good enough is what sets them apart from every other firm we've worked with."
                         </blockquote>
 <div class="flex flex-col items-center">
@@ -176,7 +176,7 @@ export const html = `
 <!-- Testimonial 2 -->
 <div class="min-w-full snap-center px-4">
 <div class="max-w-4xl mx-auto text-center">
-<blockquote class="font-headline-xl text-headline-xl md:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
+<blockquote class="font-headline-xl text-xl md:text-headline-xl lg:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
                             "the level of technical rigor Nextek Sol brought to our cloud migration was unprecidented. they didnt just move our workloads, they optimized our entire cost to performance ratio."
                         </blockquote>
 <div class="flex flex-col items-center">
@@ -191,7 +191,7 @@ export const html = `
 <!-- Testimonial 3 -->
 <div class="min-w-full snap-center px-4">
 <div class="max-w-4xl mx-auto text-center">
-<blockquote class="font-headline-xl text-headline-xl md:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
+<blockquote class="font-headline-xl text-xl md:text-headline-xl lg:text-[44px] text-inverse-on-surface leading-tight mb-12 italic">
                             "architecting for 99.999% availability is a massive challenge. NT Sol delivered a resilient infrastructure that has weathered every peak without a single milisecond of downtime."
                         </blockquote>
 <div class="flex flex-col items-center">
@@ -205,11 +205,11 @@ export const html = `
 </div>
 </div>
 <!-- Navigation Controls -->
-<div class="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between pointer-events-none px-4 md:-mx-12">
-<button class="pointer-events-auto p-3 bg-primary/20 hover:bg-primary/40 border border-white/10 rounded-full text-white transition-all backdrop-blur-md" onclick="document.getElementById('testimonial-scroll').scrollBy({left: -window.innerWidth, behavior: 'smooth'})">
+<div class="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 right-0 justify-between pointer-events-none px-4 md:-mx-12 z-10">
+<button class="pointer-events-auto p-3 bg-primary/20 hover:bg-primary/40 border border-white/10 rounded-full text-white transition-all backdrop-blur-md" onclick="const c=document.getElementById('testimonial-scroll');c.scrollTo({left:c.scrollLeft-c.offsetWidth,behavior:'smooth'})">
 <span class="material-symbols-outlined">west</span>
 </button>
-<button class="pointer-events-auto p-3 bg-primary/20 hover:bg-primary/40 border border-white/10 rounded-full text-white transition-all backdrop-blur-md" onclick="document.getElementById('testimonial-scroll').scrollBy({left: window.innerWidth, behavior: 'smooth'})">
+<button class="pointer-events-auto p-3 bg-primary/20 hover:bg-primary/40 border border-white/10 rounded-full text-white transition-all backdrop-blur-md" onclick="const c=document.getElementById('testimonial-scroll');c.scrollTo({left:c.scrollLeft+c.offsetWidth,behavior:'smooth'})">
 <span class="material-symbols-outlined">east</span>
 </button>
 </div>
@@ -223,43 +223,43 @@ export const html = `
 </div>
 </section>
 <!-- Detailed Result Stats -->
-<section class="py-[120px] bg-gradient-to-b from-surface to-surface-container-low">
+<section class="py-16 md:py-[120px] bg-gradient-to-b from-surface to-surface-container-low">
 <div class="container mx-auto px-6 md:px-[48px] max-w-[1280px]">
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
 <!-- Card 1: Deployments -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">rocket_launch</span>
-<div class="text-5xl md:text-display-lg-mobile font-bold text-primary mb-2">140+</div>
+<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">140+</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Deployments</p>
 </div>
 <!-- Card 2: Uptime -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">verified</span>
-<div class="text-5xl md:text-display-lg-mobile font-bold text-primary mb-2">99.9</div>
+<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">99.9</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Uptime %</p>
 </div>
 <!-- Card 3: Latency -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">speed</span>
-<div class="text-5xl md:text-display-lg-mobile font-bold text-primary mb-2">12ms</div>
+<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">12ms</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Avg Latency</p>
 </div>
 <!-- Card 4: Patents -->
-<div class="bg-surface-container-lowest border border-outline-variant/30 p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">military_tech</span>
-<div class="text-5xl md:text-display-lg-mobile font-bold text-primary mb-2">15</div>
+<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">15</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Patents Issued</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Final CTA -->
-<section class="py-[120px] container mx-auto px-6 md:px-[48px] max-w-[1280px] text-center">
-<div class="bg-primary rounded-[2rem] p-16 md:p-24 relative overflow-hidden group">
+<section class="py-16 md:py-[120px] container mx-auto px-6 md:px-[48px] max-w-[1280px] text-center">
+<div class="bg-primary rounded-[2rem] p-8 md:p-16 lg:p-24 relative overflow-hidden group">
 <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-50 group-hover:opacity-100 transition-opacity duration-1000"></div>
 <div class="relative z-10">
-<h2 class="font-headline-xl text-display-lg-mobile md:text-headline-xl text-on-primary mb-8">Ready to engineer your <br> next horizon?</h2>
-<a class="bg-on-primary text-primary px-10 py-5 rounded-xl font-headline-lg text-headline-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-black/10" href="/contact">
+<h2 class="font-headline-xl text-display-lg-mobile md:text-headline-xl text-on-primary mb-6 md:mb-8">Ready to engineer your <br class="hidden md:block"> next horizon?</h2>
+<a class="inline-block bg-on-primary text-primary px-6 md:px-10 py-4 md:py-5 rounded-xl font-headline-lg text-body-lg md:text-headline-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-black/10" href="/contact">
                 Subscribe to our Deep-Tech Insights
             </a>
 </div>

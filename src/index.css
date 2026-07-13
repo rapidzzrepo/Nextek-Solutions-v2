@@ -12,7 +12,6 @@
   display: flex;
   overflow: hidden;
   user-select: none;
-  gap: 2rem;
   will-change: transform;
 }
 

@@ -9,11 +9,11 @@ export default function Footer() {
   }, [])
 
   return (
-    <footer className="bg-[#0a0a0a] w-full py-section-gap border-t border-white/10 relative overflow-hidden accelerated-layer" id="footer-section">
+    <footer className="bg-[#0a0a0a] w-full py-16 md:py-section-gap border-t border-white/10 relative overflow-hidden accelerated-layer" id="footer-section">
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         <canvas id="footer-precision-canvas" className="w-full h-full block"></canvas>
       </div>
-      <div className="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10">
         <div className="col-span-1 md:col-span-1">
           <div className="h-12 mb-6">
             <Link to="/" className="flex items-start h-full">
@@ -52,7 +52,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-white/5 relative z-10">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-12 md:mt-20 pt-8 border-t border-white/5 relative z-10">
         <p className="text-surface-variant/60 font-label-md">© 2012 Nextek Sol (Inc). All rights reserved.</p>
       </div>
     </footer>

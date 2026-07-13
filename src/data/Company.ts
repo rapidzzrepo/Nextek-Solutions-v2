@@ -1,20 +1,20 @@
 export const html = `
 <!-- Hero Section -->
-<section class="relative w-full overflow-hidden py-section-gap" id="company-hero">
+<section class="relative w-full overflow-hidden min-h-[750px] md:min-h-auto py-16 md:py-section-gap flex items-center" id="company-hero">
 <canvas id="company-star-bg" class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer"></canvas>
-<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary border border-primary/10 mb-8 font-label-sm text-label-sm uppercase tracking-widest">
 <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
                     Who We Are
                 </span>
-<h1 class="font-display-lg text-display-lg mb-6 leading-tight text-on-surface">Built on Technical Authority.</h1>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight text-on-surface">Built on Technical Authority.</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
                     We don't just build software; we engineer infrastructure for the future. Nextek Sol combines high-precision development with sovereign cloud security to empower the world's most ambitious enterprises.
                 </p>
 </div>
 </section>
 <!-- Core Values: Bento Grid -->
-<section class="bg-surface-container-low py-section-gap px-margin-desktop">
+<section class="bg-surface-container-low py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop">
   <div class="max-w-container-max mx-auto">
     <div class="text-center mb-16">
       <span class="text-primary font-label-md text-label-md mb-4 block uppercase tracking-widest">Performance Metrics &amp; Scale</span>
@@ -41,7 +41,7 @@ export const html = `
   </div>
 </section>
 <!-- Leadership Section -->
-<section class="bg-inverse-surface text-inverse-on-surface py-section-gap px-margin-desktop relative overflow-hidden" id="elite-section">
+<section class="bg-inverse-surface text-inverse-on-surface py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop relative overflow-hidden" id="elite-section">
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="elite-precision-canvas" class="w-full h-full block"></canvas>
 </div>
@@ -126,7 +126,7 @@ export const html = `
 </div>
 </section>
 <!-- Security & Compliance Section -->
-<section class="px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
 <div class="flex flex-col md:flex-row gap-gutter items-center">
 <div class="md:w-1/2">
 <span class="text-primary font-label-md text-label-md mb-4 block">SECURITY FIRST</span>
@@ -174,7 +174,7 @@ export const html = `
 </div>
 </section>
 <!-- Technical Authority Callout -->
-<section class="mb-section-gap px-margin-desktop max-w-container-max mx-auto">
+<section class="mb-12 md:mb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div class="bg-primary-container text-on-primary-container p-12 md:p-24 rounded-3xl relative overflow-hidden">
 <div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
 

@@ -1,13 +1,13 @@
 export const html = `
 <!-- Hero Section: Featured Article -->
-<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
-<div class="flex flex-col lg:flex-row gap-12 items-center bg-white border border-outline-variant rounded-xl overflow-hidden p-8 lg:p-12" style="opacity: 1; transition: opacity 0.2s ease-in-out;">
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 md:mb-section-gap">
+<div class="flex flex-col lg:flex-row gap-8 md:gap-12 items-center bg-white border border-outline-variant rounded-xl overflow-hidden p-6 md:p-8 lg:p-12" style="opacity: 1; transition: opacity 0.2s ease-in-out;">
 <div class="lg:w-3/5 space-y-6">
 <div class="flex items-center gap-3">
 <span class="bg-primary-fixed-dim text-on-primary-fixed-variant px-3 py-1 rounded-full text-label-md font-label-md">CASE STUDY</span>
 <span class="text-outline text-label-md font-label-md uppercase tracking-widest">FEATURED CASE STUDY</span>
 </div>
-<h1 class="font-display-lg text-display-lg leading-tight text-on-surface max-w-2xl" id="featured-title">Predictive Health: MRI Diagnostic Acceleration</h1>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight text-on-surface max-w-2xl" id="featured-title">Predictive Health: MRI Diagnostic Acceleration</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl" id="featured-desc">By deploying a custom-trained computer vision model at the edge, we reduced MRI diagnostic turnaround times from 48 hours to just 15 minutes. This life-saving integration allows radiologists to prioritize critical cases in real-time, improving patient outcomes across 12 hospitals.</p>
 <div class="flex items-center gap-6 pt-4">
 <div class="flex items-center gap-3">
@@ -26,7 +26,7 @@ export const html = `
 </div>
 </div>
 </div>
-<div class="lg:w-2/5 w-full h-[400px] rounded-lg overflow-hidden relative group cursor-pointer border border-outline-variant transition-all duration-700 opacity-100 translate-y-0 bg-surface-container">
+<div class="lg:w-2/5 w-full h-[250px] md:h-[400px] rounded-lg overflow-hidden relative group cursor-pointer border border-outline-variant transition-all duration-700 opacity-100 translate-y-0 bg-surface-container">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 transition-all ease-in-out opacity-100 scale-100" data-alt="A sophisticated 3D abstract visualization representing complex network data architecture. Interconnected glass-like nodes and crystalline structures glow with faint purple and blue luminescence. The scene is rendered with deep depth of field against a pristine white background, conveying a sense of order, precision, and high-level software engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARF9G8_y6k6Vgpx295OH8n9RA5KsCislaSZYy8lFK0DJVeqwGoP4OZg1gQNvKGRy2UEqDIBoYKqA0kz3ltbv6I2Unt7wMbv5RRWsUhoa5OhR1IOm9IqIvNN7MxUsPO8OYEpuAvokgZuDGd1Y5JWJt4OIZQfI9oJltKOPJnHNEsZ0r2a2OTGotCG-oD5T6BC2ira1EC-Q4hOlY6Kt88yWhGAUAL0J5dy4kYP7iifsea9ESUx6vw-Kw" id="featured-img" onload="this.classList.remove('opacity-0', 'scale-95'); this.classList.add('opacity-100', 'scale-100'); this.parentElement.classList.remove('animate-pulse');" loading="eager" decoding="async" style="will-change: opacity, transform; transition: opacity 0.7s ease-in-out;">
 <div class="absolute inset-0 flex items-center justify-center">
 <button id="featured-next-btn" class="material-symbols-outlined text-primary text-5xl bg-white/90 hover:bg-white rounded-full p-4 shadow-xl cursor-pointer transition-transform hover:scale-110 active:scale-95 select-none" aria-label="Next case study">arrow_forward</button>
@@ -35,7 +35,7 @@ export const html = `
 </div>
 </section>
 <!-- Category Filter -->
-<section class="max-w-container-max mx-auto px-margin-desktop mb-16">
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 md:mb-16">
 <div class="flex flex-wrap items-center justify-between gap-6 border-b border-outline-variant/30 pb-6">
 <div class="flex gap-4 items-center"><button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md">All Case Studies</button><button class="text-on-surface-variant hover:text-primary transition-colors px-6 py-2 rounded-full font-label-md text-label-md">Fintech</button><button class="text-on-surface-variant hover:text-primary transition-colors px-6 py-2 rounded-full font-label-md text-label-md">Healthcare</button><button class="text-on-surface-variant hover:text-primary transition-colors px-6 py-2 rounded-full font-label-md text-label-md">Logistics</button></div>
 <div class="flex items-center gap-2 text-on-surface-variant border border-outline-variant px-4 py-2 rounded-lg bg-white">
@@ -45,7 +45,7 @@ export const html = `
 </div>
 </section>
 <!-- Insight Cards Grid -->
-<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 md:mb-section-gap">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Card 1 -->
 <div class="group bg-white border border-outline-variant rounded-xl overflow-hidden hover-card transition-all duration-300 duration-700 opacity-100 translate-y-0" data-study="sovereign">
@@ -170,7 +170,7 @@ export const html = `
 </div>
 </section>
 <!-- Newsletter CTA: Dark Mode Contrast -->
-<section class="w-full bg-inverse-surface py-24 px-margin-desktop">
+<section class="w-full bg-inverse-surface py-12 md:py-24 px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto flex flex-col items-center text-center space-y-8">
 <div class="bg-primary/20 p-4 rounded-2xl mb-4">
 <span class="material-symbols-outlined text-inverse-primary text-5xl">mail</span>
