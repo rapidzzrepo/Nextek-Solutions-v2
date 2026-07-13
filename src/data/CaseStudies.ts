@@ -36,11 +36,11 @@ export const html = `
 </section>
 <!-- Category Filter -->
 <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 md:mb-16">
-<div class="flex flex-wrap items-center justify-between gap-6 border-b border-outline-variant/30 pb-6">
-<div class="flex gap-4 items-center"><button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md">All Case Studies</button><button class="text-on-surface-variant hover:text-primary transition-colors px-6 py-2 rounded-full font-label-md text-label-md">Fintech</button><button class="text-on-surface-variant hover:text-primary transition-colors px-6 py-2 rounded-full font-label-md text-label-md">Healthcare</button><button class="text-on-surface-variant hover:text-primary transition-colors px-6 py-2 rounded-full font-label-md text-label-md">Logistics</button></div>
-<div class="flex items-center gap-2 text-on-surface-variant border border-outline-variant px-4 py-2 rounded-lg bg-white">
-<span class="material-symbols-outlined">search</span>
-<input class="bg-transparent border-none focus:ring-0 font-body-md text-body-md" placeholder="Search the hub..." type="text">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-6 border-b border-outline-variant/30 pb-6">
+<div class="flex gap-2 md:gap-4 items-center overflow-x-auto no-scrollbar -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0"><button class="bg-primary text-on-primary px-4 md:px-6 py-2 rounded-full font-label-md text-[12px] md:text-label-md whitespace-nowrap shrink-0">All Case Studies</button><button class="text-on-surface-variant hover:text-primary transition-colors px-4 md:px-6 py-2 rounded-full font-label-md text-[12px] md:text-label-md whitespace-nowrap shrink-0">Fintech</button><button class="text-on-surface-variant hover:text-primary transition-colors px-4 md:px-6 py-2 rounded-full font-label-md text-[12px] md:text-label-md whitespace-nowrap shrink-0">Healthcare</button><button class="text-on-surface-variant hover:text-primary transition-colors px-4 md:px-6 py-2 rounded-full font-label-md text-[12px] md:text-label-md whitespace-nowrap shrink-0">Logistics</button></div>
+<div class="flex items-center gap-2 text-on-surface-variant border border-outline-variant px-4 py-2 rounded-lg bg-white w-full md:w-auto">
+<span class="material-symbols-outlined text-lg">search</span>
+<input class="bg-transparent border-none focus:ring-0 font-body-md text-body-md w-full" placeholder="Search the hub..." type="text">
 </div>
 </div>
 </section>

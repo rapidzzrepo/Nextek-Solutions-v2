@@ -1,6 +1,6 @@
 export const html = `
 <!-- Hero Section -->
-<section class="hero-gradient relative overflow-hidden bg-surface min-h-[750px] md:min-h-auto py-16 md:py-section-gap border-b border-outline-variant/20 flex items-center" id="contact-hero">
+<section class="hero-gradient relative overflow-hidden bg-surface min-h-[750px] md:min-h-[600px] py-16 md:py-section-gap border-b border-outline-variant/20 flex items-center" id="contact-hero">
 <canvas class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer" id="contact-star-bg"></canvas>
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary border border-primary/10 mb-8 font-label-sm text-label-sm uppercase tracking-widest">
@@ -86,7 +86,7 @@ export const html = `
 </div>
 <div>
 <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Inquiry Node</p>
-<p class="font-sora font-semibold text-on-surface">info@nexteksolutions.com</p>
+<p class="font-sora font-semibold text-on-surface">info@nexteksol.com</p>
 </div>
 </div>
 <div class="group flex gap-5">

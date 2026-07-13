@@ -1,6 +1,6 @@
 export const html = `
 <!-- Hero Section -->
-<section class="relative w-full overflow-hidden min-h-[750px] md:min-h-auto py-16 md:py-section-gap flex items-center" id="company-hero">
+<section class="relative w-full overflow-hidden min-h-[750px] md:min-h-[600px] py-16 md:py-section-gap flex items-center" id="company-hero">
 <canvas id="company-star-bg" class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer"></canvas>
 <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary border border-primary/10 mb-8 font-label-sm text-label-sm uppercase tracking-widest">
