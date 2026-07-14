@@ -50,22 +50,24 @@ app.post('/api/contact', async (req, res) => {
     <p>Best regards,<br/><strong>Nextek Sol</strong></p>
   `
 
+  // TODO: Re-enable email by uncommenting the sendMail blocks below
   try {
-    await transporter.sendMail({
-      from: `"Nextek Sol Webapp" <${process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_EMAIL,
-      replyTo: from_email,
-      subject: `New Inquiry from Nextek Sol Website`,
-      html: internalHtml
-    })
+    // await transporter.sendMail({
+    //   from: `"Nextek Sol Webapp" <${process.env.SMTP_USER}>`,
+    //   to: process.env.CONTACT_EMAIL,
+    //   replyTo: from_email,
+    //   subject: `New Inquiry from Nextek Sol Website`,
+    //   html: internalHtml
+    // })
 
-    await transporter.sendMail({
-      from: `"Nextek Sol" <${process.env.SMTP_USER}>`,
-      to: from_email,
-      subject: `We've received your message - Nextek Sol`,
-      html: confirmationHtml
-    })
+    // await transporter.sendMail({
+    //   from: `"Nextek Sol" <${process.env.SMTP_USER}>`,
+    //   to: from_email,
+    //   subject: `We've received your message - Nextek Sol`,
+    //   html: confirmationHtml
+    // })
 
+    console.log('Email disabled — form submission received:', { fullName, from_email, subject })
     res.json({ success: true })
   } catch (err) {
     console.error('Email error:', err)

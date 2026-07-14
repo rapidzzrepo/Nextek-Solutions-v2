@@ -3,27 +3,27 @@ export const html = `
 <section class="relative min-h-[750px] md:min-h-[800px] flex items-center overflow-hidden bg-surface py-16 md:py-section-gap" id="hero-section">
 <!-- Particle System Background (Optimized Canvas) -->
 <canvas class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer" id="star-background" width="2600" height="1842" style="width: 1300px; height: 921px;"></canvas>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 gap-gutter items-center flex flex-col">
-<div class="space-y-8 text-center">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md mx-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop relative z-10 gap-gutter items-center flex flex-col">
+<div class="space-y-6 md:space-y-8 text-center">
+<div class="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md mx-auto">
 <span class="relative flex h-2 w-2">
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
 </span>
                 NEXT-GEN ENGINEERING
             </div>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-[1.05] tracking-tight">
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg leading-[1.05] tracking-tight">
                 Architecting the Future of <span class="text-primary">Absolute Performance</span>
 </h1>
 <p class="font-body-lg text-on-surface-variant max-w-xl mx-auto">
                 A specialized engineering collective dedicated to building high-concurrency systems, mission-critical AI, and frictionless digital experiences for the world's most ambitious enterprises.
             </p>
-<div class="flex flex-wrap gap-4 justify-center">
-<a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-headline-lg flex items-center gap-3 hover:bg-primary-container transition-all" href="/contact">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center max-w-md mx-auto sm:max-w-none sm:w-auto">
+<a class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-headline-lg flex items-center justify-center gap-3 hover:bg-primary-container transition-all" href="/contact">
                     Start a Project
                     <span class="material-symbols-outlined">arrow_forward</span>
 </a>
-<a class="border border-primary text-primary px-8 py-4 rounded-lg font-headline-lg hover:bg-primary-fixed transition-all" href="/solutions">
+<a class="border border-primary text-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-headline-lg flex items-center justify-center gap-3 hover:bg-primary-fixed transition-all" href="/solutions">
                     View Roadmap
                 </a>
 </div>
@@ -32,32 +32,32 @@ export const html = `
 </section>
 <!-- 2. Certifications Marquee -->
 <div class="bg-surface-container-low py-8 md:py-12 border-y border-outline-variant/30 overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <div class="text-center mb-12">
 <p class="font-label-md text-on-surface-variant/60 uppercase tracking-widest">Performance Metrics &amp; Scale</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
 <div class="text-center p-6 accelerated-layer">
-<div class="font-display-lg text-headline-xl text-primary mb-2"><span class="count-up" data-target="10" data-suffix="+">0</span></div>
+<div class="font-display-lg text-[28px] md:text-headline-xl text-primary mb-2"><span class="count-up" data-target="10" data-suffix="+">0</span></div>
 <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Years in Market</div>
 </div>
 <div class="text-center p-6 accelerated-layer">
-<div class="font-display-lg text-headline-xl text-primary mb-2"><span class="count-up" data-target="250" data-suffix="+">0</span></div>
+<div class="font-display-lg text-[28px] md:text-headline-xl text-primary mb-2"><span class="count-up" data-target="250" data-suffix="+">0</span></div>
 <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Expert Engineers</div>
 </div>
 <div class="text-center p-6 accelerated-layer">
-<div class="font-display-lg text-headline-xl text-primary mb-2"><span class="count-up" data-target="500" data-suffix="+">0</span></div>
+<div class="font-display-lg text-[28px] md:text-headline-xl text-primary mb-2"><span class="count-up" data-target="500" data-suffix="+">0</span></div>
 <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Projects Delivered</div>
 </div>
 <div class="text-center p-6 accelerated-layer">
-<div class="font-display-lg text-headline-xl text-primary mb-2"><span class="count-up" data-target="99" data-suffix="%">0</span></div>
+<div class="font-display-lg text-[28px] md:text-headline-xl text-primary mb-2"><span class="count-up" data-target="99" data-suffix="%">0</span></div>
 <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Satisfied Clients</div>
 </div>
 </div>
 </div>
 </div>
 <!-- 3. Engineering Excellence Grid -->
-<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div class="max-w-2xl">
 <h2 class="font-display-lg text-headline-xl mb-4">Engineering Excellence Across Every Domain</h2>
@@ -67,7 +67,7 @@ export const html = `
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- AI Card -->
-<div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
+<div class="bento-item p-6 md:p-8 border border-outline-variant/50 rounded-xl bg-surface group">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="psychology">psychology</span>
 </div>
@@ -76,7 +76,7 @@ export const html = `
 <a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Details <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
 </div>
 <!-- Web Card -->
-<div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
+<div class="bento-item p-6 md:p-8 border border-outline-variant/50 rounded-xl bg-surface group">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="web">web</span>
 </div>
@@ -85,7 +85,7 @@ export const html = `
 <a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Details <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
 </div>
 <!-- Mobile Card -->
-<div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
+<div class="bento-item p-6 md:p-8 border border-outline-variant/50 rounded-xl bg-surface group">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="smartphone">smartphone</span>
 </div>
@@ -94,7 +94,7 @@ export const html = `
 <a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Details <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
 </div>
 <!-- Cloud Card -->
-<div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
+<div class="bento-item p-6 md:p-8 border border-outline-variant/50 rounded-xl bg-surface group">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="cloud">cloud</span>
 </div>
@@ -103,7 +103,7 @@ export const html = `
 <a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Details <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
 </div>
 <!-- UI/UX Card -->
-<div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
+<div class="bento-item p-6 md:p-8 border border-outline-variant/50 rounded-xl bg-surface group">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="design_services">design_services</span>
 </div>
@@ -112,7 +112,7 @@ export const html = `
 <a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Details <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
 </div>
 <!-- DevOps Card -->
-<div class="bento-item p-8 border border-outline-variant/50 rounded-xl bg-surface group">
+<div class="bento-item p-6 md:p-8 border border-outline-variant/50 rounded-xl bg-surface group">
 <div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
 <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
 </div>
@@ -123,21 +123,21 @@ export const html = `
 </div>
 </section>
 <!-- 4. Animated Stats -->
-<div class="bg-surface-container-low py-8 md:py-12 border-y border-outline-variant/30 overflow-hidden"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"><div class="text-center mb-12"><p class="font-label-md text-on-surface-variant/60 uppercase tracking-widest">Technical Certifications</p></div><div class="flex flex-col gap-8"><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="ISO 27001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">ISO 27001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 3.png" alt="GCP Professional" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">GCP Professional</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 4.png" alt="CKA Kubernetes" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">CKA Kubernetes</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="HIPAA Compliant" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">HIPAA Compliant</span></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/11.png" alt="ISO 9001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">ISO 9001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/123.jpg" alt="PCI DSS" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">PCI DSS</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/goodFirms.png" alt="GoodFirms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">GoodFirms</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/top-firms.png" alt="Top Firms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider">Top Firms</span></div></div></div></div></div>
+<div class="bg-surface-container-low py-8 md:py-12 border-y border-outline-variant/30 overflow-hidden"><div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop"><div class="text-center mb-12"><p class="font-label-md text-on-surface-variant/60 uppercase tracking-widest">Technical Certifications</p></div><div class="flex flex-col gap-8"><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="ISO 27001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">ISO 27001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 3.png" alt="GCP Professional" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">GCP Professional</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen copy 4.png" alt="CKA Kubernetes" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">CKA Kubernetes</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/screen.png" alt="HIPAA Compliant" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">HIPAA Compliant</span></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-6"><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/11.png" alt="ISO 9001" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">ISO 9001</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/123.jpg" alt="PCI DSS" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">PCI DSS</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/goodFirms.png" alt="GoodFirms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">GoodFirms</span></div><div class="flex flex-col items-center p-4 rounded-xl border border-outline-variant/30 bg-surface/50"><img class="w-12 h-12 object-contain mb-3" src="/Certification-Icons/top-firms.png" alt="Top Firms" /><span class="font-display-lg text-[14px] font-bold uppercase tracking-wider text-center">Top Firms</span></div></div></div></div></div>
 <section class="bg-[#0a0a0a] py-12 md:py-20 relative overflow-hidden" id="marquee-star-section">
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="industry-leaders-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 relative z-10">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop mb-12 relative z-10">
 <p class="font-label-md text-surface-variant/40 uppercase tracking-[0.2em] text-center">Engineered with Industry Leaders</p>
 </div>
-<div class="marquee relative flex overflow-hidden select-none gap-8 md:gap-16 z-10">
+<div class="marquee relative flex overflow-hidden select-none z-10">
 <div class="marquee-content"><img alt="Keiser Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/KEISER.png"><img alt="Spivi Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/SPIN.png"><img alt="BeaverFit Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/BEAVER-FIT.png"><img alt="LLAX Agarrage" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/LLAXAgarrage-white.png"><img alt="Lantern Finance" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Lantern-Finance-white.png"><img alt="SafeSite USA" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/SafeSiteUSA-1-1-p-500.png"><img alt="Success.ai" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Success.ai-white.png"><img alt="Trove Green" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Trove_Green-white-p-500.png"><img alt="Casting Pax" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/castingPax-copy.png"><img alt="OtherMind" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/otherMind.png"></div>
 <div aria-hidden="true" class="marquee-content"><img alt="Keiser Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/KEISER.png"><img alt="Spivi Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/SPIN.png"><img alt="BeaverFit Logo" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos-Old/BEAVER-FIT.png"><img alt="LLAX Agarrage" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/LLAXAgarrage-white.png"><img alt="Lantern Finance" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Lantern-Finance-white.png"><img alt="SafeSite USA" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/SafeSiteUSA-1-1-p-500.png"><img alt="Success.ai" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Success.ai-white.png"><img alt="Trove Green" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/Trove_Green-white-p-500.png"><img alt="Casting Pax" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/castingPax-copy.png"><img alt="OtherMind" class="h-12 w-auto object-contain hover:opacity-100 transition-opacity cursor-pointer" decoding="async" loading="lazy" src="/Partner-Logos/otherMind.png"></div>
 </div>
 </section>
 <!-- 5. AI & Robotics Solutions Bento -->
-<section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
+<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <div class="flex flex-col lg:flex-row gap-gutter h-auto lg:h-[600px]">
 <div class="lg:w-2/3 grid grid-rows-2 gap-gutter">
 <div class="grid md:grid-cols-2 gap-gutter">
@@ -167,7 +167,7 @@ export const html = `
 </div>
 </div>
 </div>
-<div class="lg:w-1/3 bg-surface-container flex flex-col justify-center p-12 rounded-xl accelerated-layer">
+<div class="lg:w-1/3 bg-surface-container flex flex-col justify-center p-6 md:p-12 rounded-xl accelerated-layer">
 <h3 class="font-display-lg text-headline-xl mb-6">Advanced AI/ML Solutions</h3>
 <p class="font-body-md text-on-surface-variant mb-10">We architect next-generation intelligence. Our AI/ML solutions leverage deep learning and predictive analytics to solve complex data challenges and drive autonomous decision-making.</p>
 <button class="w-full py-4 border border-primary text-primary font-label-md rounded-lg hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-2">Explore AI Capabilities <span class="material-symbols-outlined">arrow_forward</span></button>
@@ -176,7 +176,7 @@ export const html = `
 </section>
 <!-- 8. Success Stories Carousel -->
 <section class="py-16 md:py-section-gap overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 flex justify-between items-end">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop mb-16 flex justify-between items-end">
 <div>
 <h2 class="font-display-lg text-headline-xl">Success Stories</h2>
 <p class="font-body-lg text-on-surface-variant">Real-world impact across global markets.</p>
@@ -190,9 +190,9 @@ export const html = `
 </button>
 </div>
 </div>
-<div class="flex gap-gutter px-margin-mobile md:px-margin-desktop transition-transform duration-500 ease-in-out cursor-grab active:cursor-grabbing accelerated-layer" id="studyContainer">
+<div class="flex gap-gutter px-margin-mobile sm:px-margin-tablet md:px-margin-desktop transition-transform duration-500 ease-in-out cursor-grab active:cursor-grabbing accelerated-layer" id="studyContainer">
 <!-- Study 1 -->
-<div class="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-8 flex flex-col md:flex-row gap-8 accelerated-layer">
+<div class="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 accelerated-layer">
 <div class="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shrink-0">
 <div class="w-full h-full bg-cover bg-center accelerated-layer" data-alt="A modern fintech interface showing a real-time trading dashboard" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCejiKSN8VCK6fCi6PFTedhyUsxOUkuGzLtmWoQt7pYf4He77hdfg1OA3giju5DESf1THrvMtc_w4qd1F1iSYdkX6XUc3f1ioVJkAO7E9XourxljzHG2IVPaDrewo9vnZeMjociMs1jC9llMs08L77pwQoN1jPdytwAJFVtxszMC1BsnMkSs9Hxl-Be_l_BfCQh2MAE7cF7XYIfSNyqTjnOchdBnDI-PXN-JK5_o2YxSl_LmJ_hh_A&quot;);"></div>
 </div>
@@ -206,7 +206,7 @@ export const html = `
 </div>
 </div>
 <!-- Study 2 -->
-<div class="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-8 flex flex-col md:flex-row gap-8 accelerated-layer">
+<div class="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 accelerated-layer">
 <div class="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shrink-0">
 <div class="w-full h-full bg-cover bg-center accelerated-layer" data-alt="A professional medical technician looking at a wall-mounted digital screen displaying an AI-driven MRI analysis" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAcLjewmN3NJ10k4uuNxnZjAqojCDal2R_RKPJ0y2lSqxkHYh8W5b5o_UDA8tDTyZ0zKqiq6n6N89XTK1ypdrvt_C7dy4bBn0Lk-ar6T7qODxDqHfPAVumwzqgGqaGETXkQ-dvCbv82VrGlbsu3YggtAVU848jiBq63PYVAh4-OR_d5g3td7uzh-ThZOIhr986gKsJT5Czz2tnLQbgcM2qhWIG06R_GgLaIwuBz65oy_Kk4u1iVJkA&quot;);"></div>
 </div>
@@ -220,7 +220,7 @@ export const html = `
 </div>
 </div>
 <!-- Study 3 -->
-<div class="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-8 flex flex-col md:flex-row gap-8 accelerated-layer">
+<div class="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 accelerated-layer">
 <div class="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shrink-0">
 <div class="w-full h-full bg-cover bg-center accelerated-layer" data-alt="A large-scale automated shipping port at night" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDaePOw9tRxLDM9DHuaoM6HCbVf37gF6X9upSjKirzZ_6_PgYhSQ4RQl_lDJ6z_Ti2jh5s3o_BknnIqiHuGJHj6JDDVqJadrzHlSKnmhX_NEyyMr_3uV5hb5wkcGCYV1m7r6KqaBK4vojA4BEy1XXK_QtF9bQXPbHsnMZJzqkn17AxGIdgWgtSQNebZV1wMVx_E36ab9yb-5BnVi-cX1OjgQdcIh8WrrKdMEPmn_1HR-xXOx3wN8Zw&quot;);"></div>
 </div>
@@ -243,7 +243,7 @@ export const html = `
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="industry-solutions-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop relative z-10">
 <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 <div>
 <h2 class="font-display-lg text-headline-xl text-white mb-8">Industry Solutions</h2>
@@ -307,9 +307,9 @@ export const html = `
 </div>
 </section>
 <!-- 10. Transforming Ideas (Product Showcases) -->
-<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl mb-8 md:mb-16 text-center">Transforming Ideas into Ecosystems</h2>
-<div class="space-y-16 md:space-y-32">
+<div class="space-y-10 md:space-y-16 lg:space-y-32">
 <!-- Product 1 -->
 <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
 <div class="lg:w-1/2 order-2 lg:order-1">
@@ -358,12 +358,12 @@ export const html = `
 </section>
 <!-- 11. Testimonials -->
 <section class="bg-surface-container py-16 md:py-section-gap">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <div class="text-center mb-16">
 <h2 class="font-display-lg text-headline-xl">Trusted by the Elite</h2>
 </div>
 <div class="grid md:grid-cols-3 gap-gutter">
-<div class="glass-card p-10 rounded-3xl relative accelerated-layer">
+<div class="glass-card p-6 md:p-10 rounded-3xl relative accelerated-layer">
 <span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-8">format_quote</span>
 <div class="flex gap-1 mb-6 text-primary">
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
@@ -378,7 +378,7 @@ export const html = `
 <p class="font-label-md text-on-surface-variant">CTO, Global Infra Dynamics</p>
 </div>
 </div>
-<div class="glass-card p-10 rounded-3xl relative accelerated-layer">
+<div class="glass-card p-6 md:p-10 rounded-3xl relative accelerated-layer">
 <span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-8">format_quote</span>
 <div class="flex gap-1 mb-6 text-primary">
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
@@ -393,7 +393,7 @@ export const html = `
 <p class="font-label-md text-on-surface-variant">Head of Platform, FinStream</p>
 </div>
 </div>
-<div class="glass-card p-10 rounded-3xl relative accelerated-layer">
+<div class="glass-card p-6 md:p-10 rounded-3xl relative accelerated-layer">
 <span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-8">format_quote</span>
 <div class="flex gap-1 mb-6 text-primary">
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
@@ -416,11 +416,11 @@ export const html = `
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="resilient-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-<div class="p-6 md:p-12 rounded-3xl border border-primary/20 bg-transparent backdrop-blur-sm accelerated-layer"><div class="grid lg:grid-cols-10 gap-8 md:gap-12 items-center"><div class="lg:col-span-6"><div class="max-w-3xl mb-8 md:mb-16"><span class="text-primary-fixed-dim font-label-md uppercase tracking-widest mb-4 block">Zero-Downtime Data Sovereignty</span><h2 class="font-display-lg text-headline-xl mb-6 text-white font-bold">Resilient Infrastructure for <span class="text-primary-fixed-dim">Absolute Availability</span></h2><p class="font-body-lg text-surface-variant/80">Engineered for absolute survival. Our decentralized architecture ensures total resilience against physical infrastructure failure, regional conflict, and kinetic threats. In the event of a total localized catastrophe, your systems remain operational and transition instantly to surviving global nodes.</p></div><div class="grid md:grid-cols-3 gap-6"><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">shield</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Attack Resilience</h4><p class="text-[14px] text-surface-variant/70">Neutralizing kinetic and cyber threats at the edge.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">dynamic_form</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Automatic Failover</h4><p class="text-[14px] text-surface-variant/70">Instant redirection prevents site crashes.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">database</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Stateful Recovery</h4><p class="text-[14px] text-surface-variant/70">Real-time data replication across zones.</p></div></div></div><div class="lg:col-span-4"><div class="glass-card p-4 rounded-3xl shadow-xl border border-white/10 overflow-hidden group accelerated-layer"><div class="aspect-video rounded-2xl overflow-hidden relative"><img alt="Global resilient infrastructure network visualization" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ_tXR0cMmkW-Hgc9Hnx4_1kI045Vgfy8ARrPSCv6JkjvwsQ-WQ6R7FqdgRR-EmZ5cDP60pOGruhAvb_wwyiurXDsvp5Qo9TGGzdepPC0z1LB-Z89_EfRRKlHb1litcenCLh0PIUDO__9dN_7uXWh5HaWSqg7-6vfxkhZuaYESXMLuRBqYiaWvcwTkUNVKJSRhvhHRXPa2bvtQ8FuZj9iJove9riys9joN3U8wUqvt8ZSdMtz4JA0"></div></div></div></div></div>
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop relative z-10">
+<div class="p-6 md:p-12 rounded-3xl border border-primary/20 bg-transparent backdrop-blur-sm accelerated-layer"><div class="grid lg:grid-cols-10 gap-8 md:gap-12 items-center"><div class="lg:col-span-6"><div class="max-w-3xl mb-8 md:mb-16"><span class="text-primary-fixed-dim font-label-md uppercase tracking-widest mb-4 block">Zero-Downtime Data Sovereignty</span><h2 class="font-display-lg text-[24px] sm:text-[28px] md:text-headline-xl mb-6 text-white font-bold">Resilient Infrastructure for <span class="text-primary-fixed-dim">Absolute Availability</span></h2><p class="font-body-lg text-surface-variant/80">Engineered for absolute survival. Our decentralized architecture ensures total resilience against physical infrastructure failure, regional conflict, and kinetic threats. In the event of a total localized catastrophe, your systems remain operational and transition instantly to surviving global nodes.</p></div><div class="grid md:grid-cols-3 gap-6"><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">shield</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Attack Resilience</h4><p class="text-[14px] text-surface-variant/70">Neutralizing kinetic and cyber threats at the edge.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">dynamic_form</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Automatic Failover</h4><p class="text-[14px] text-surface-variant/70">Instant redirection prevents site crashes.</p></div><div class="dark-glass p-6 rounded-2xl border border-primary/20 hover:border-primary/50 transition-all group accelerated-layer"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed mb-4 group-hover:scale-110 transition-transform"><span class="material-symbols-outlined">database</span></div><h4 class="font-headline-lg text-[18px] text-white mb-2">Stateful Recovery</h4><p class="text-[14px] text-surface-variant/70">Real-time data replication across zones.</p></div></div></div><div class="lg:col-span-4"><div class="glass-card p-4 rounded-3xl shadow-xl border border-white/10 overflow-hidden group accelerated-layer"><div class="aspect-video rounded-2xl overflow-hidden relative"><img alt="Global resilient infrastructure network visualization" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ_tXR0cMmkW-Hgc9Hnx4_1kI045Vgfy8ARrPSCv6JkjvwsQ-WQ6R7FqdgRR-EmZ5cDP60pOGruhAvb_wwyiurXDsvp5Qo9TGGzdepPC0z1LB-Z89_EfRRKlHb1litcenCLh0PIUDO__9dN_7uXWh5HaWSqg7-6vfxkhZuaYESXMLuRBqYiaWvcwTkUNVKJSRhvhHRXPa2bvtQ8FuZj9iJove9riys9joN3U8wUqvt8ZSdMtz4JA0"></div></div></div></div></div>
 </div>
 </section>
-<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<section class="py-16 md:py-section-gap max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl mb-8 md:mb-16 text-center">Engineered with Precision</h2>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
 <div class="flex flex-col items-center p-6 border border-outline-variant/30 rounded-xl hover:border-primary/40 transition-all accelerated-layer">
@@ -455,7 +455,7 @@ export const html = `
 </section>
 <!-- 13. Insights -->
 <section class="py-16 md:py-section-gap bg-surface">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-16 gap-4 md:gap-0">
 <div>
 <h2 class="font-display-lg text-headline-xl">Latest Insights</h2>

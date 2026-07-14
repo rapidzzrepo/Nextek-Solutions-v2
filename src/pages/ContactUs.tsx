@@ -3,6 +3,11 @@ import { html } from '../data/ContactUs'
 import { StarSystem } from '../utils/starSystem'
 import { initMouseGlow } from '../utils/mouseGlow'
 
+const INQUIRY_EMAIL = 'umairshafi737@gmail.com'
+const SUBJECT_LINE = 'Inquiry Request from NextekSol Website'
+
+// TODO: When backend is re-enabled, remove client CC from mailto and use server-side auto-reply instead
+
 export default function ContactUs() {
   const ref = useRef<HTMLDivElement>(null)
 
@@ -51,47 +56,50 @@ export default function ContactUs() {
     const form = document.getElementById('contact-form') as HTMLFormElement
     const submitBtn = document.getElementById('contact-submit-btn') as HTMLButtonElement
 
-    const handleSubmit = async (e: SubmitEvent) => {
+    const handleSubmit = (e: SubmitEvent) => {
       e.preventDefault()
-      submitBtn.disabled = true
-      submitBtn.innerHTML = 'Sending...'
 
       const formData = new FormData(form)
-      const payload = {
-        first_name: formData.get('first_name') || '',
-        last_name: formData.get('last_name') || '',
-        from_email: formData.get('from_email') || '',
-        company: formData.get('company') || '',
-        subject: formData.get('subject') || '',
-        message: formData.get('message') || ''
-      }
+      const firstName = String(formData.get('first_name') || '')
+      const lastName = String(formData.get('last_name') || '')
+      const fromEmail = String(formData.get('from_email') || '')
+      const company = String(formData.get('company') || '')
+      const subject = String(formData.get('subject') || '')
+      const message = String(formData.get('message') || '')
 
-      try {
-        const res = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        })
-        const data = await res.json()
-        if (data.success) {
-          submitBtn.innerHTML = 'Sent Successfully ✓'
-          submitBtn.classList.remove('bg-primary', 'hover:bg-tertiary')
-          submitBtn.classList.add('bg-green-600')
-          form.reset()
-          setTimeout(() => {
-            submitBtn.innerHTML = 'Send Inquiry'
-            submitBtn.classList.remove('bg-green-600')
-            submitBtn.classList.add('bg-primary', 'hover:bg-tertiary')
-            submitBtn.disabled = false
-          }, 2500)
-        } else {
-          submitBtn.innerHTML = 'Failed - Try Again'
-          submitBtn.disabled = false
-        }
-      } catch {
-        submitBtn.innerHTML = 'Failed - Try Again'
+      if (!firstName || !fromEmail || !subject || !message) return
+
+      const fullName = [firstName, lastName].filter(Boolean).join(' ')
+
+      const lines = [
+        'Hello Nextek Sol Team,',
+        '',
+        `I would like to inquire about: ${subject}`,
+        '',
+        `Name: ${fullName}`,
+        `Email: ${fromEmail}`,
+        company ? `Organization: ${company}` : null,
+        '',
+        'Message:',
+        message,
+        '',
+        'Best regards,',
+        firstName
+      ].filter((line): line is string => line !== null)
+
+      const body = lines.join('%0A')
+      const mailtoLink = `mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent(SUBJECT_LINE)}&body=${body}`
+
+      submitBtn.innerHTML = 'Opening Email...'
+      submitBtn.disabled = true
+
+      window.location.href = mailtoLink
+
+      setTimeout(() => {
+        form.reset()
+        submitBtn.innerHTML = 'Initialize Inquiry'
         submitBtn.disabled = false
-      }
+      }, 2000)
     }
 
     form?.addEventListener('submit', handleSubmit)

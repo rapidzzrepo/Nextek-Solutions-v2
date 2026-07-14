@@ -3,21 +3,21 @@ export const html = `
 <header class="relative w-full overflow-hidden min-h-[600px] md:min-h-[800px] flex items-center" id="solutions-hero">
 <canvas id="solutions-star-bg" class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer"></canvas>
 <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-[100px] pointer-events-none z-[1] transition-all duration-1000 opacity-100 translate-y-0"></div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop pt-24 pb-section-gap max-w-container-max mx-auto">
-<div class="max-w-4xl transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative z-10 px-margin-mobile sm:px-margin-tablet md:px-margin-desktop pt-24 pb-16 md:pb-section-gap max-w-container-max mx-auto">
+<div class="max-w-4xl transition-all duration-1000 opacity-100 translate-y-0 text-center">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/20 mb-8">
 <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
 <span class="font-label-md text-primary text-[12px] uppercase tracking-widest">Solutions Portal v2.0</span>
 </div>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8 leading-[1.1]">
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg text-on-surface mb-8 leading-[1.1]">
                 Solving <span class="text-gradient">Complexity</span> with Precision Engineering.
             </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
                 We bridge the gap between ambitious vision and technical reality. Nextek Sol delivers high-fidelity engineering systems designed for sovereign performance and global scale.
             </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-headline-lg text-body-md hover:shadow-lg hover:shadow-primary/20 transition-all">Explore Our Pillars</button>
-<button class="bg-surface-container border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-headline-lg text-body-md hover:bg-surface-variant transition-all">Technical Documentation</button>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto sm:max-w-none">
+<button class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-xl font-headline-lg text-body-md flex items-center justify-center hover:shadow-lg hover:shadow-primary/20 transition-all">Explore Our Pillars</button>
+<button class="bg-surface-container border border-outline-variant text-on-surface px-6 md:px-8 py-3 md:py-4 rounded-xl font-headline-lg text-body-md flex items-center justify-center hover:bg-surface-variant transition-all">Technical Documentation</button>
 </div>
 </div>
 </div>
@@ -26,7 +26,7 @@ export const html = `
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="solutions-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
+<div class="relative z-10 px-margin-mobile sm:px-margin-tablet md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
 <div class="text-center mb-16">
 <h2 class="font-headline-xl text-headline-xl mb-4 text-white">Engineered with <span class="text-primary-fixed-dim">Precision</span></h2>
 <p class="text-white/50 max-w-2xl mx-auto">Our core technology stack is selected for performance, safety, and global scalability.</p>
@@ -58,10 +58,10 @@ export const html = `
 </div>
 </div>
 <div class="text-center mt-16">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">View Full Stack</button>
+<button class="bg-primary text-on-primary px-6 md:px-10 py-3 md:py-4 rounded-xl font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">View Full Stack</button>
 </div>
 </div>
-</section><section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap bg-surface-container-low transition-all duration-1000 opacity-100 translate-y-0">
+</section><section class="px-margin-mobile sm:px-margin-tablet md:px-margin-desktop py-16 md:py-section-gap bg-surface-container-low transition-all duration-1000 opacity-100 translate-y-0">
 <div class="max-w-container-max mx-auto">
 <div class="text-center mb-12 md:mb-24">
 <h2 class="font-headline-xl text-headline-xl mb-4">Strategic Engineering Pillars</h2>
@@ -163,7 +163,7 @@ export const html = `
 </div>
 </section>
 <!-- Vertical Market Focus -->
-<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+<section class="px-margin-mobile sm:px-margin-tablet md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div class="max-w-xl">
 <h2 class="font-headline-xl text-headline-xl mb-4">Domain Specialization</h2>
@@ -172,21 +172,21 @@ export const html = `
 <a class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all" href="#">Industry Reports <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="glass-card p-8 rounded-2xl pillar-card">
+<div class="glass-card p-6 md:p-8 rounded-2xl pillar-card">
 <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
 <span class="material-symbols-outlined">payments</span>
 </div>
 <h4 class="font-headline-lg text-[22px] mb-3">Fintech</h4>
 <p class="text-on-surface-variant text-body-md">High-frequency transaction processing and secure ledger synchronization for global finance.</p>
 </div>
-<div class="glass-card p-8 rounded-2xl pillar-card">
+<div class="glass-card p-6 md:p-8 rounded-2xl pillar-card">
 <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
 <span class="material-symbols-outlined">medical_services</span>
 </div>
 <h4 class="font-headline-lg text-[22px] mb-3">Healthcare</h4>
 <p class="text-on-surface-variant text-body-md">HIPAA-compliant AI diagnostic tools and secure clinical data exchange protocols.</p>
 </div>
-<div class="glass-card p-8 rounded-2xl pillar-card">
+<div class="glass-card p-6 md:p-8 rounded-2xl pillar-card">
 <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
 <span class="material-symbols-outlined">local_shipping</span>
 </div>
@@ -200,16 +200,16 @@ export const html = `
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="protocol-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
+<div class="relative z-10 px-margin-mobile sm:px-margin-tablet md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
 <div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
 <div>
-<h2 class="font-headline-xl text-headline-xl text-white mb-8">Our Engineering Protocol</h2>
+<h2 class="font-headline-xl text-[24px] sm:text-[28px] md:text-headline-xl text-white mb-8">Our Engineering Protocol</h2>
 <div class="space-y-8 md:space-y-12">
 <div class="flex gap-6 relative">
 <div class="absolute left-5 top-10 bottom-[-40px] w-px bg-primary/30"></div>
 <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10">1</div>
 <div>
-<h4 class="text-white font-bold text-xl mb-2">Audit &amp; Discovery</h4>
+<h4 class="text-white font-bold text-[16px] sm:text-xl mb-2">Audit &amp; Discovery</h4>
 <p class="text-surface-variant/70 text-body-md">Deep-dive technical assessment of legacy debt, architecture bottlenecks, and security posture.</p>
 </div>
 </div>
@@ -217,14 +217,14 @@ export const html = `
 <div class="absolute left-5 top-10 bottom-[-40px] w-px bg-primary/30"></div>
 <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10">2</div>
 <div>
-<h4 class="text-white font-bold text-xl mb-2">Architectural Blueprint</h4>
+<h4 class="text-white font-bold text-[16px] sm:text-xl mb-2">Architectural Blueprint</h4>
 <p class="text-surface-variant/70 text-body-md">Designing high-fidelity schematics for sovereign cloud scaling and AI integration.</p>
 </div>
 </div>
 <div class="flex gap-6">
 <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold shrink-0 z-10">3</div>
 <div>
-<h4 class="text-white font-bold text-xl mb-2">Acceleration Phase</h4>
+<h4 class="text-white font-bold text-[16px] sm:text-xl mb-2">Acceleration Phase</h4>
 <p class="text-surface-variant/70 text-body-md">Rapid deployment of engineering squads to execute the blueprint with zero-downtime transition.</p>
 </div>
 </div>
@@ -244,7 +244,7 @@ export const html = `
 </div>
 </section>
 <!-- Final CTA Section -->
-<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto text-center transition-all duration-1000 opacity-100 translate-y-0">
+<section class="px-margin-mobile sm:px-margin-tablet md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto text-center transition-all duration-1000 opacity-100 translate-y-0">
 <div class="bg-primary rounded-[2rem] p-8 md:p-16 relative overflow-hidden shadow-2xl">
 <!-- Abstract pattern overlay -->
 <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,white_0%,transparent_70%)]"></div>

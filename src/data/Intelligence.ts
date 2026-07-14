@@ -5,23 +5,23 @@ export const html = `
   <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
     <canvas id="hero-precision-canvas" class="w-full h-full block"></canvas>
   </div>
-<div class="container mx-auto px-6 md:px-[48px] max-w-[1280px] relative z-10">
+<div class="container mx-auto px-margin-mobile sm:px-margin-tablet md:px-[48px] max-w-[1280px] relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div>
+<div class="text-center lg:text-left">
 <span class="inline-block px-3 py-1 mb-6 bg-white/10 text-primary-fixed-dim backdrop-blur-md border border-white/10 rounded-full font-label-md text-label-md tracking-wider uppercase">
                     Intelligence Hub
                 </span>
-<h1 class="font-headline-xl text-display-lg-mobile md:text-display-lg font-extrabold text-white leading-tight mb-8">
+<h1 class="font-headline-xl text-[28px] sm:text-display-lg-mobile md:text-display-lg font-extrabold text-white leading-tight mb-8">
                     Engineering Intelligence <span class="text-primary-fixed-dim">at Scale</span>.
                 </h1>
-<p class="font-body-lg text-body-lg text-white/80 mb-10 max-w-xl">
+<p class="font-body-lg text-body-lg text-white/80 mb-10 max-w-xl mx-auto lg:mx-0">
                     Access our repository of high-fidelity technical insights, architectural deep-dives, and performance protocols for the modern enterprise.
                 </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:opacity-95 transition-opacity shadow-lg shadow-primary/20">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none">
+<button class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-label-md text-label-md flex items-center justify-center hover:opacity-95 transition-opacity shadow-lg shadow-primary/20">
                         Explore Protocols
                     </button>
-<button class="border border-white/20 text-white px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-white/5 transition-colors">
+<button class="border border-white/20 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-label-md text-label-md flex items-center justify-center hover:bg-white/5 transition-colors">
                         Technical Manifesto
                     </button>
 </div>
@@ -40,7 +40,7 @@ export const html = `
 </div>
 </section>
 <!-- Content Section: Technical Insights -->
-<section class="py-16 md:py-[120px] container mx-auto px-6 md:px-[48px] max-w-[1280px]">
+<section class="py-16 md:py-[120px] container mx-auto px-margin-mobile sm:px-margin-tablet md:px-[48px] max-w-[1280px]">
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
 <div class="max-w-2xl">
 <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Technical Insights</h2>
@@ -134,8 +134,8 @@ export const html = `
 </div>
 </div>
 <div class="bg-inverse-surface text-inverse-on-surface p-8 rounded-xl flex flex-col justify-center items-center text-center">
-<div class="text-display-lg-mobile font-extrabold text-inverse-primary mb-2">&lt;200ms</div>
-<p class="font-headline-lg text-headline-lg mb-2">Token-to-User</p>
+<div class="text-[28px] sm:text-display-lg-mobile font-extrabold text-inverse-primary mb-2">&lt;200ms</div>
+<p class="font-headline-lg text-[16px] sm:text-headline-lg mb-2">Token-to-User</p>
 <p class="text-sm opacity-70">New benchmark for high-fidelity reasoning response.</p>
 </div>
 </div>
@@ -148,7 +148,7 @@ export const html = `
 <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
 <canvas id="testimonial-precision-canvas" class="w-full h-full block"></canvas>
 </div>
-<div class="container mx-auto px-6 md:px-[48px] max-w-[1280px] relative z-10">
+<div class="container mx-auto px-margin-mobile sm:px-margin-tablet md:px-[48px] max-w-[1280px] relative z-10">
 <div class="text-center mb-12">
 <span class="material-symbols-outlined text-inverse-primary text-5xl">format_quote</span>
 </div>
@@ -224,37 +224,37 @@ export const html = `
 </section>
 <!-- Detailed Result Stats -->
 <section class="py-16 md:py-[120px] bg-gradient-to-b from-surface to-surface-container-low">
-<div class="container mx-auto px-6 md:px-[48px] max-w-[1280px]">
+<div class="container mx-auto px-margin-mobile sm:px-margin-tablet md:px-[48px] max-w-[1280px]">
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
 <!-- Card 1: Deployments -->
 <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">rocket_launch</span>
-<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">140+</div>
+<div class="text-[28px] md:text-4xl lg:text-display-lg-mobile font-bold text-primary mb-2">140+</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Deployments</p>
 </div>
 <!-- Card 2: Uptime -->
 <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">verified</span>
-<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">99.9</div>
+<div class="text-[28px] md:text-4xl lg:text-display-lg-mobile font-bold text-primary mb-2">99.9</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Uptime %</p>
 </div>
 <!-- Card 3: Latency -->
 <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">speed</span>
-<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">12ms</div>
+<div class="text-[28px] md:text-4xl lg:text-display-lg-mobile font-bold text-primary mb-2">12ms</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Avg Latency</p>
 </div>
 <!-- Card 4: Patents -->
 <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 md:p-8 rounded-2xl shadow-sm card-hover flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-4">military_tech</span>
-<div class="text-4xl md:text-5xl lg:text-display-lg-mobile font-bold text-primary mb-2">15</div>
+<div class="text-[28px] md:text-4xl lg:text-display-lg-mobile font-bold text-primary mb-2">15</div>
 <p class="font-label-md text-label-md text-on-surface-variant/70 uppercase tracking-wider">Patents Issued</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Final CTA -->
-<section class="py-16 md:py-[120px] container mx-auto px-6 md:px-[48px] max-w-[1280px] text-center">
+<section class="py-16 md:py-[120px] container mx-auto px-margin-mobile sm:px-margin-tablet md:px-[48px] max-w-[1280px] text-center">
 <div class="bg-primary rounded-[2rem] p-8 md:p-16 lg:p-24 relative overflow-hidden group">
 <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-50 group-hover:opacity-100 transition-opacity duration-1000"></div>
 <div class="relative z-10">

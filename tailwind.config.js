@@ -68,6 +68,7 @@ export default {
         gutter: "24px",
         "margin-desktop": "48px",
         "margin-mobile": "16px",
+        "margin-tablet": "32px",
         base: "8px",
         "container-max": "1280px",
         "section-gap": "120px",

@@ -2,12 +2,12 @@ export const html = `
 <!-- Hero Section -->
 <section class="hero-gradient relative overflow-hidden bg-surface min-h-[750px] md:min-h-[600px] py-16 md:py-section-gap border-b border-outline-variant/20 flex items-center" id="contact-hero">
 <canvas class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer" id="contact-star-bg"></canvas>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop text-center relative z-10">
 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary border border-primary/10 mb-8 font-label-sm text-label-sm uppercase tracking-widest">
 <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
                 Inquiry Protocol 0.1
             </span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight text-on-surface tracking-tight">
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg mb-6 leading-tight text-on-surface tracking-tight">
                 Architect Your <span class="text-gradient">Next System</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -17,7 +17,7 @@ export const html = `
 </section>
 <!-- Contact Interface -->
 <section class="py-16 md:py-section-gap bg-surface-container-lowest" id="contact-interface">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-12 gap-gutter items-start">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop grid md:grid-cols-12 gap-gutter items-start">
 <!-- Technical Form -->
 <div class="md:col-span-8">
 <div class="glass-card p-6 md:p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
@@ -64,9 +64,9 @@ export const html = `
 </div>
 </div>
 <!-- Side Info -->
-<div class="md:col-span-4 space-y-12 pl-0 md:pl-8">
+<div class="md:col-span-4 space-y-8 md:space-y-12 pl-0 md:pl-8">
 <div class="space-y-8">
-<h3 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-3">
+<h3 class="font-headline-lg text-[20px] sm:text-headline-lg text-on-surface flex items-center gap-3">
                         Direct Access
                         <span class="w-8 h-[1px] bg-outline-variant"></span>
 </h3>
@@ -110,7 +110,7 @@ export const html = `
 </div>
 </div>
 </div>
-<div class="p-8 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<div class="p-6 md:p-8 rounded-xl bg-surface-container-low border border-outline-variant/30">
 <h4 class="font-sora font-bold text-on-surface mb-4">Availability</h4>
 <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
                         Engineering teams operate across three global shifts to ensure 24/7 technical oversight and deployment capability.
@@ -125,22 +125,22 @@ export const html = `
 </section>
 <!-- Global Hubs Section -->
 <section class="py-16 md:py-section-gap bg-surface" id="hubs">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
 <div class="space-y-4">
 <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Distributed Presence</span>
-<h2 class="font-headline-xl text-headline-xl text-on-surface">Strategic Global Hubs</h2>
+<h2 class="font-headline-xl text-[22px] sm:text-headline-xl text-on-surface">Strategic Global Hubs</h2>
 <p class="text-on-surface-variant max-w-xl text-body-md">
                         Our sovereign engineering nodes are strategically placed in key financial and technology corridors to provide local expertise with global reach.
                     </p>
 </div>
 <div class="flex gap-12 items-center">
 <div class="text-center">
-<div class="text-primary font-bold font-sora text-3xl">24/7</div>
+<div class="text-primary font-bold font-sora text-2xl md:text-3xl">24/7</div>
 <div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Uptime</div>
 </div>
 <div class="text-center">
-<div class="text-primary font-bold font-sora text-3xl">3</div>
+<div class="text-primary font-bold font-sora text-2xl md:text-3xl">3</div>
 <div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Main Nodes</div>
 </div>
 </div>
@@ -148,7 +148,7 @@ export const html = `
 <div class="grid md:grid-cols-3 gap-gutter">
 <!-- New York Hub -->
 <div class="glass-card rounded-xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 group">
-<div class="p-8 space-y-6">
+<div class="p-6 md:p-8 space-y-6">
 <div class="flex justify-between items-start">
 <div>
 <h3 class="font-sora font-bold text-xl text-on-surface group-hover:text-primary transition-colors">New York</h3>
@@ -182,7 +182,7 @@ export const html = `
 </div>
 <!-- Pakistan Hub -->
 <div class="glass-card rounded-xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 group">
-<div class="p-8 space-y-6">
+<div class="p-6 md:p-8 space-y-6">
 <div class="flex justify-between items-start">
 <div>
 <h3 class="font-sora font-bold text-xl text-on-surface group-hover:text-primary transition-colors">Lahore</h3>
@@ -216,7 +216,7 @@ export const html = `
 </div>
 <!-- Dubai Hub -->
 <div class="glass-card rounded-xl overflow-hidden hover:translate-y-[-4px] transition-all duration-300 group">
-<div class="p-8 space-y-6">
+<div class="p-6 md:p-8 space-y-6">
 <div class="flex justify-between items-start">
 <div>
 <h3 class="font-sora font-bold text-xl text-on-surface group-hover:text-primary transition-colors">Dubai</h3>

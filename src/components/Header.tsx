@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-6 lg:px-[48px] py-3 md:py-4 bg-surface/80 glass-nav border-b border-outline-variant/30">
+      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 sm:px-8 md:px-[48px] py-3 md:py-4 bg-surface/80 glass-nav border-b border-outline-variant/30">
         <Link to="/" className="h-8 md:h-10" onClick={closeMenu}>
           <img
             alt="Nextek Sol Logo"
