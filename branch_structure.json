@@ -1,0 +1,27 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Shift-Towards-Marketing-and-Engineering",
+    "clean-architecture-v2",
+    "fix-routing-404",
+    "main",
+    "route-fix",
+    "website-improvements"
+  ],
+  "parent": {
+    "Shift-Towards-Marketing-and-Engineering": "main",
+    "clean-architecture-v2": "main",
+    "fix-routing-404": "main",
+    "main": null,
+    "route-fix": "main",
+    "website-improvements": "main"
+  },
+  "order": [
+    "main",
+    "Shift-Towards-Marketing-and-Engineering",
+    "clean-architecture-v2",
+    "fix-routing-404",
+    "route-fix",
+    "website-improvements"
+  ]
+}
