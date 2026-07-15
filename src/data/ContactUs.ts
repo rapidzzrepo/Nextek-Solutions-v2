@@ -126,7 +126,7 @@ export const html = `
 <!-- Global Hubs Section -->
 <section class="py-16 md:py-section-gap bg-surface" id="hubs">
 <div class="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+<div class="flex flex-col md:flex-row justify-between items-center md:items-end text-center md:text-left mb-16 gap-8">
 <div class="space-y-4">
 <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Distributed Presence</span>
 <h2 class="font-headline-xl text-[22px] sm:text-headline-xl text-on-surface">Strategic Global Hubs</h2>
@@ -141,7 +141,7 @@ export const html = `
 </div>
 <div class="text-center">
 <div class="text-primary font-bold font-sora text-2xl md:text-3xl">3</div>
-<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Main Nodes</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">HeadQuarters</div>
 </div>
 </div>
 </div>
