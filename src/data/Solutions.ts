@@ -1,23 +1,23 @@
 export const html = `
 <!-- Hero Section -->
-<header class="relative w-full overflow-hidden min-h-[600px] md:min-h-[800px] flex items-center" id="solutions-hero">
+<header class="relative w-full overflow-hidden min-h-[750px] md:min-h-[800px] flex items-center" id="solutions-hero">
 <canvas id="solutions-star-bg" class="absolute inset-0 z-0 pointer-events-none opacity-60 accelerated-layer"></canvas>
 <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-[100px] pointer-events-none z-[1] transition-all duration-1000 opacity-100 translate-y-0"></div>
-<div class="relative z-10 px-margin-mobile sm:px-margin-tablet md:px-margin-desktop pt-24 pb-16 md:pb-section-gap max-w-container-max mx-auto">
+<div class="relative z-10 px-margin-mobile sm:px-margin-tablet md:px-margin-desktop py-16 md:py-section-gap max-w-container-max mx-auto">
 <div class="max-w-4xl transition-all duration-1000 opacity-100 translate-y-0 text-center">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/20 mb-8">
 <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
 <span class="font-label-md text-primary text-[12px] uppercase tracking-widest">Solutions Portal v2.0</span>
 </div>
-<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg text-on-surface mb-8 leading-[1.1]">
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg font-bold text-on-surface mb-8 leading-[1.1]">
                 Solving <span class="text-gradient">Complexity</span> with Precision Engineering.
             </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
                 We bridge the gap between ambitious vision and technical reality. Nextek Sol delivers high-fidelity engineering systems designed for sovereign performance and global scale.
             </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto sm:max-w-none">
-<button class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-xl font-headline-lg text-body-md flex items-center justify-center hover:shadow-lg hover:shadow-primary/20 transition-all">Explore Our Pillars</button>
-<button class="bg-surface-container border border-outline-variant text-on-surface px-6 md:px-8 py-3 md:py-4 rounded-xl font-headline-lg text-body-md flex items-center justify-center hover:bg-surface-variant transition-all">Technical Documentation</button>
+<div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto sm:max-w-none">
+<button class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-xl font-headline-lg text-body-md sm:flex-1 flex items-center justify-center hover:shadow-lg hover:shadow-primary/20 transition-all">Explore Our Pillars</button>
+<button class="bg-surface-container border border-outline-variant text-on-surface px-6 md:px-8 py-3 md:py-4 rounded-xl font-headline-lg text-body-md sm:flex-1 flex items-center justify-center hover:bg-surface-variant transition-all">Technical Documentation</button>
 </div>
 </div>
 </div>

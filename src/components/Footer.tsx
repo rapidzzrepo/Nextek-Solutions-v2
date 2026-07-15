@@ -13,8 +13,8 @@ export default function Footer() {
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         <canvas id="footer-precision-canvas" className="w-full h-full block"></canvas>
       </div>
-      <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10">
-        <div className="col-span-1 md:col-span-1">
+      <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10 text-center md:text-left">
+        <div className="col-span-1 md:col-span-1 flex flex-col items-center md:items-start">
           <div className="h-12 mb-6">
             <Link to="/" className="flex items-start h-full">
               <img alt="Nextek Sol (Inc)" className="h-full w-auto object-contain brightness-0 invert" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKTPm9zjG_Yba6IctY1vF6s0oZLeEGAC2Rz5nETny42BG_qne-LuTZLAgOgHegJ4XNe4NHVFcslz3QBt78H4VEZoTYwIXOXxa0Tra1Cp5BkMOsuCJrNN88tTAu8yxoqe4JTlv0imFSVx2_J9NHl2KTSd5RASFiusnFownhRyrPlleXWHbNhWjLTizc7lB8RASto4U4eanrdRExz3Nq_wEx1tx3RPp38ZEuQiwpf771JjvwZT7fJWmDILnibFKCoMJwbrceAkNCYKgV" />
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop mt-12 md:mt-20 pt-8 border-t border-white/5 relative z-10">
-        <p className="text-surface-variant/60 font-label-md">© 2012 Nextek Sol (Inc). All rights reserved.</p>
+        <p className="text-surface-variant/60 font-label-md text-center md:text-left">© 2012 Nextek Sol (Inc). All rights reserved.</p>
       </div>
     </footer>
   )

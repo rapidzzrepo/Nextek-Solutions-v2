@@ -1,6 +1,6 @@
 export const html = `
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-[#0a0a0a]">
+<section class="relative min-h-screen flex items-center py-16 md:py-24 overflow-hidden bg-[#0a0a0a]">
   <!-- Starfield Background Canvas -->
   <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
     <canvas id="hero-precision-canvas" class="w-full h-full block"></canvas>
@@ -17,11 +17,11 @@ export const html = `
 <p class="font-body-lg text-body-lg text-white/80 mb-10 max-w-xl mx-auto lg:mx-0">
                     Access our repository of high-fidelity technical insights, architectural deep-dives, and performance protocols for the modern enterprise.
                 </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto lg:max-w-none">
-<button class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-label-md text-label-md flex items-center justify-center hover:opacity-95 transition-opacity shadow-lg shadow-primary/20">
+<div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto lg:max-w-none">
+<button class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center hover:opacity-95 transition-opacity shadow-lg shadow-primary/20">
                         Explore Protocols
                     </button>
-<button class="border border-white/20 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-label-md text-label-md flex items-center justify-center hover:bg-white/5 transition-colors">
+<button class="border border-white/20 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center hover:bg-white/5 transition-colors">
                         Technical Manifesto
                     </button>
 </div>

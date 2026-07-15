@@ -3,7 +3,7 @@ import { html } from '../data/ContactUs'
 import { StarSystem } from '../utils/starSystem'
 import { initMouseGlow } from '../utils/mouseGlow'
 
-const INQUIRY_EMAIL = 'umairshafi737@gmail.com'
+const INQUIRY_EMAIL = 'info@nexteksol.com'
 const SUBJECT_LINE = 'Inquiry Request from NextekSol Website'
 
 // TODO: When backend is re-enabled, remove client CC from mailto and use server-side auto-reply instead

@@ -7,7 +7,7 @@ export const html = `
 <span class="bg-primary-fixed-dim text-on-primary-fixed-variant px-3 py-1 rounded-full text-label-md font-label-md">CASE STUDY</span>
 <span class="text-outline text-label-md font-label-md uppercase tracking-widest">FEATURED CASE STUDY</span>
 </div>
-<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg leading-tight text-on-surface max-w-2xl" id="featured-title">Predictive Health: MRI Diagnostic Acceleration</h1>
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg font-bold leading-tight text-on-surface max-w-2xl" id="featured-title">Predictive Health: MRI Diagnostic Acceleration</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl" id="featured-desc">By deploying a custom-trained computer vision model at the edge, we reduced MRI diagnostic turnaround times from 48 hours to just 15 minutes. This life-saving integration allows radiologists to prioritize critical cases in real-time, improving patient outcomes across 12 hospitals.</p>
 <div class="flex flex-wrap items-center gap-3 sm:gap-6 pt-4">
 <div class="flex items-center gap-3">

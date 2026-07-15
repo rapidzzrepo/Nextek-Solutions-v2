@@ -7,7 +7,7 @@ export const html = `
 <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
                     Who We Are
                 </span>
-<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg mb-6 leading-tight text-on-surface">Built on Technical Authority.</h1>
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg font-bold mb-6 leading-tight text-on-surface">Built on Technical Authority.</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
                     We don't just build software; we engineer infrastructure for the future. Nextek Sol combines high-precision development with sovereign cloud security to empower the world's most ambitious enterprises.
                 </p>

@@ -7,7 +7,7 @@ export const html = `
 <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
                 Inquiry Protocol 0.1
             </span>
-<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg mb-6 leading-tight text-on-surface tracking-tight">
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg font-bold mb-6 leading-tight text-on-surface tracking-tight">
                 Architect Your <span class="text-gradient">Next System</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">

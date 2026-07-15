@@ -92,7 +92,7 @@ export default function Header() {
             aria-label="Close menu"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
           </button>
           <div className="flex-1 flex flex-col px-6 pt-24 pb-4 overflow-y-auto">

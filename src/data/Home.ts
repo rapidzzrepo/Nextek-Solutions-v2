@@ -12,18 +12,18 @@ export const html = `
 </span>
                 NEXT-GEN ENGINEERING
             </div>
-<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg leading-[1.05] tracking-tight">
+<h1 class="font-display-lg text-[28px] sm:text-display-lg-mobile md:text-display-lg font-bold leading-[1.05] tracking-tight">
                 Architecting the Future of <span class="text-primary">Absolute Performance</span>
 </h1>
 <p class="font-body-lg text-on-surface-variant max-w-xl mx-auto">
                 A specialized engineering collective dedicated to building high-concurrency systems, mission-critical AI, and frictionless digital experiences for the world's most ambitious enterprises.
             </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center max-w-md mx-auto sm:max-w-none sm:w-auto">
-<a class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-headline-lg flex items-center justify-center gap-3 hover:bg-primary-container transition-all" href="/contact">
+<div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto sm:max-w-none sm:w-auto">
+<a class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-headline-lg text-body-md flex items-center justify-center gap-3 hover:bg-primary-container transition-all" href="/contact">
                     Start a Project
                     <span class="material-symbols-outlined">arrow_forward</span>
 </a>
-<a class="border border-primary text-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-headline-lg flex items-center justify-center gap-3 hover:bg-primary-fixed transition-all" href="/solutions">
+<a class="border border-primary text-primary px-6 md:px-8 py-3 md:py-4 rounded-lg font-headline-lg text-body-md flex items-center justify-center gap-3 hover:bg-primary-fixed transition-all" href="/solutions">
                     View Roadmap
                 </a>
 </div>
@@ -248,15 +248,15 @@ export const html = `
 <div>
 <h2 class="font-display-lg text-headline-xl text-white mb-8">Industry Solutions</h2>
 <div class="space-y-4">
-<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 transition-all dark-glass active-tab" id="tab-0" onclick="switchTab(0)">
+<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 transition-all dark-glass active-tab" id="tab-0">
 <span class="font-headline-lg text-white block">Fintech</span>
 <p class="text-surface-variant/60 font-body-md mt-2">Solving high-frequency processing challenges.</p>
 </button>
-<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 hover:bg-white/5 transition-all" id="tab-1" onclick="switchTab(1)">
+<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 hover:bg-white/5 transition-all" id="tab-1">
 <span class="font-headline-lg text-white block">Healthcare</span>
 <p class="text-surface-variant/60 font-body-md mt-2">Bridging legacy systems with modern AI.</p>
 </button>
-<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 hover:bg-white/5 transition-all" id="tab-2" onclick="switchTab(2)">
+<button class="tab-btn w-full text-left p-6 rounded-xl border border-white/10 hover:bg-white/5 transition-all" id="tab-2">
 <span class="font-headline-lg text-white block">Logistics</span>
 <p class="text-surface-variant/60 font-body-md mt-2">Optimizing supply chains with real-time data.</p>
 </button>
