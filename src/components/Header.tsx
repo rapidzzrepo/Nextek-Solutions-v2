@@ -1,13 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-
-const navLinks = [
-  { label: 'Home', path: '/' },
-  { label: 'Solutions', path: '/solutions' },
-  { label: 'Intelligence', path: '/intelligence' },
-  { label: 'Case Studies', path: '/case-studies' },
-  { label: 'Company', path: '/company' },
-]
+import { navLinks } from '../data/navigation'
 
 export default function Header() {
   const location = useLocation()
