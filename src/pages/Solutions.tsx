@@ -97,14 +97,14 @@ export default function Solutions() {
               key={pillar.number}
               className="grid md:grid-cols-2 gap-10 md:gap-20 items-center mb-16 md:mb-section-gap last:mb-0"
             >
-              <div className={pillar.imageFirst ? '' : 'order-2 md:order-1'}>
+              <div className={pillar.imageFirst ? '' : 'md:order-2'}>
                 <img
                   alt={pillar.imageAlt}
                   src={pillar.imageUrl}
                   className="rounded-2xl shadow-2xl w-full object-cover aspect-video"
                 />
               </div>
-              <div className={pillar.imageFirst ? '' : 'order-1 md:order-2'}>
+              <div className={pillar.imageFirst ? '' : 'md:order-1'}>
                 <div className="text-primary font-label-md uppercase tracking-widest mb-4">
                   {pillar.number}
                 </div>
