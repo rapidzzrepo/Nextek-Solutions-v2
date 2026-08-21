@@ -10,6 +10,14 @@ import {
   newsletterDescription,
 } from '../data/CaseStudies'
 
+const getInitials = (name: string) => {
+  const parts = name.trim().split(/\s+/)
+  if (parts.length === 0 || parts[0] === '') return '?'
+  return (
+    (parts[0][0] + (parts.length > 1 ? parts[parts.length - 1][0] : '')).toUpperCase()
+  )
+}
+
 export default function CaseStudies() {
   const [currentIndex, setCurrentIndex] = useState(studyKeys.indexOf('health'))
   const [activeCategory, setActiveCategory] = useState('All Case Studies')
@@ -95,12 +103,8 @@ export default function CaseStudies() {
             </p>
             <div className="flex flex-wrap items-center gap-3 sm:gap-6 pt-4">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full overflow-hidden border border-outline-variant bg-surface-container">
-                  <img
-                    className="w-full h-full object-cover"
-                    alt={defaultFeatured.authorAvatar ? 'Author avatar' : ''}
-                    src={defaultFeatured.authorAvatar}
-                  />
+                <div className="w-12 h-12 rounded-full flex items-center justify-center border border-outline-variant bg-primary-fixed-dim text-on-primary-fixed-variant font-label-md font-bold select-none">
+                  {getInitials(currentStudy.author)}
                 </div>
                 <div>
                   <p className="font-label-md text-label-md text-on-surface">
@@ -201,15 +205,9 @@ export default function CaseStudies() {
                   {study.description}
                 </p>
                 <div className="pt-4 flex items-center gap-3">
-                  {study.authorAvatar && (
-                    <div className="w-8 h-8 rounded-full overflow-hidden bg-surface-variant">
-                      <img
-                        className="w-full h-full object-cover"
-                        alt={`${study.author} avatar`}
-                        src={study.authorAvatar}
-                      />
-                    </div>
-                  )}
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-primary/10 text-primary font-label-md font-bold text-[12px] select-none">
+                    {getInitials(study.author)}
+                  </div>
                   <span className="text-label-md font-label-md text-on-surface">
                     {study.author}
                   </span>

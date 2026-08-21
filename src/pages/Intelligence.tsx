@@ -15,8 +15,10 @@ import {
 import { resilienceFeatures } from '../data/HomeData'
 
 function ResilienceSection() {
+  useWebGLStars('resilience-star-canvas')
   return (
     <section className="py-16 md:py-section-gap bg-[#0a0a0a] relative overflow-hidden" id="resilience">
+      <StarCanvas id="resilience-star-canvas" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none" />
       <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-tablet md:px-margin-desktop relative z-10">
         <div className="p-8 md:p-12 rounded-3xl border border-primary/20 bg-white/[0.02] backdrop-blur-sm">

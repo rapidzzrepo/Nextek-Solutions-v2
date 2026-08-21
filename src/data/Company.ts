@@ -9,6 +9,7 @@ export interface Leader {
   role: string
   imageUrl: string
   imageAlt: string
+  imagePosition?: string
   github?: string
   linkedin?: string
 }
@@ -41,31 +42,25 @@ export const leaders: Leader[] = [
   {
     name: 'Jawad Khan',
     role: 'Chief Architect',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuATXELDtdZ_btTXke-_Uhk1b487vX1lrfW-4FAR-WbcOM2WIszsfZ-KNWSU4NDemXwJ4cMKI7nrg3gayMzL3oVEQzKyhK_i-UfpBpwZUguk_-6V35gH5jReZGUDZwhrKFFv1ZD2PW-Nmnelwr6AVcfy9gZi2XgPSZZ9Vm5BPbST8d7UxTolYzhbyPcsuBrdS90_euyzkP-xMXNoTfdBRwaFkgnz9KrWXtim1nFPsy5tznzBmMQCFEY',
-    imageAlt:
-      'A professional headshot of a senior software engineer in a high-tech studio environment with soft blue rim lighting.',
+    imageUrl: '/Admin/Jawad-2.jpeg',
+    imageAlt: 'Portrait of Jawad Khan, Chief Architect.',
   },
   {
-    name: 'Ali Hasnain',
-    role: 'VP Engineering',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAQ7FY-0GKrRR_ejWCOTBpBuDcgCQocU3DY6wB21RKU3NhY7WCv0gNtT-AQhCU0-6lg04sM7WgsrsdbiwiR6VtPTkRVz578GXPeaJK4v5jsKqV9esHFgkpFFbjyDiRgOIqjRApXYAnFYxVNsSRfAiAOeJyeuBpdXrkdUY5HMtCKhPD7wuwaxEyN6CtdmQWzuiSq5TJuTYWBlTcehKG102uAtey0Cx5nEkil4x-0PPQbrMrRMDqZyN0',
-    imageAlt:
-      'Portrait of a young male lead engineer with glasses, looking thoughtfully at a holographic code display in a dimly lit, minimalist tech office.',
+    name: 'Amjad Islam Khan',
+    role: 'CTO',
+    imageUrl: '/Admin/Amjad.png',
+    imageAlt: 'Portrait of Amjad Islam Khan, Chief Technology Officer.',
   },
   {
     name: 'Uzair Rahim',
     role: 'Head of Cloud',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCcXP8m7lpPAOqze62PLEwFsVaTaBl9F8MxVSBNmY0Vxng-8a-o-jrJcwx6c9BMbeQEz8yRgxmgDyDgPO_PvHyRkq6tH39gPLepQGRgyhY04VOlNhG5j0fCTTN5Jzm50wPitEU4RrXUZ3HGbgpvZifMUOIiVc7EOkWjOOgcT-XMje-Fn9kFLES4obToH4qzKqxJ007Lpa_Id-kErLkDqcS6Fo4xnO2ZB8jUBtRYESM6FnohdV7o3kk',
-    imageAlt:
-      'A sophisticated professional portrait of a senior cloud infrastructure specialist in a clean, brightly lit technical studio.',
+    imageUrl: '/Admin/Uzair-2.png',
+    imageAlt: 'Portrait of Uzair Rahim, Head of Cloud.',
   },
   {
     name: 'Talha Rafi',
     role: 'Head of Sales',
-    imageUrl: '/Admin/Talha-Rafi.jpg',
+    imageUrl: '/Admin/Talha-Rafi.png',
     imageAlt: 'Talha Rafi',
   },
 ]

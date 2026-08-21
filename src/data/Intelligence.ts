@@ -121,17 +121,24 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      '"the level of technical rigor Nextek Sol brought to our cloud migration was unprecidented. they didnt just move our workloads, they optimized our entire cost to performance ratio."',
-    name: 'Sarah Chen',
-    role: 'Head of Platform, FinStream',
-    initials: 'SC',
-  },
-  {
-    quote:
       '"architecting for 99.999% availability is a massive challenge. NT Sol delivered a resilient infrastructure that has weathered every peak without a single milisecond of downtime."',
     name: 'David Vance',
     role: 'VP Infrastructure, Global Connect',
     initials: 'DV',
+  },
+  {
+    quote:
+      '"their growth team rebuilt our entire paid media funnel from scratch and our cost per acquisition dropped by almost half in a single quarter. its rare to find engineers who actually understand marketing data the way these folks do."',
+    name: 'Elena Rodriguez',
+    role: 'CMO, Brightline Retail',
+    initials: 'ER',
+  },
+  {
+    quote:
+      '"we originally approached NT Sol just for a campaign landing page and ended up with a full marketing automation stack instead. our email open rates doubled and the conversion tracking finally speaks the same language as our ad platforms."',
+    name: 'Tom Becker',
+    role: 'Growth Lead, Nexa Digital',
+    initials: 'TB',
   },
 ]
 

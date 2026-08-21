@@ -130,6 +130,7 @@ export default function Company() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     alt={leader.imageAlt}
                     src={leader.imageUrl}
+                    style={leader.imagePosition ? { objectPosition: leader.imagePosition } : undefined}
                   />
                 </div>
                 <h4 className="font-headline-lg text-[20px] sm:text-headline-lg mb-1">
