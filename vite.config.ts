@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
+    allowedHosts: ['sacred-motive-visa.ngrok-free.dev'],
     proxy: {
       '/api': 'http://localhost:3001'
     }
