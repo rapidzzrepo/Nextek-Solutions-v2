@@ -31,12 +31,12 @@ export default function CertificationRibbon() {
           <p className="font-label-md text-white/70 text-[11px] tracking-[0.24em] uppercase mb-2">Industry-Certified Excellence</p>
           <h2 className="font-headline-lg text-white text-xl md:text-2xl">Recognized & Trusted Worldwide</h2>
         </div>
-        <div className="flex flex-wrap justify-center sm:grid sm:grid-cols-3 lg:grid-cols-5 gap-0 border-t border-l border-white/15 stagger-fade">
+        <div className="flex flex-wrap justify-center sm:grid sm:grid-cols-3 lg:grid-cols-5 gap-0 border-t sm:border-l border-white/15 stagger-fade">
           {certBadges.map((cert, i) => (
             <div
               key={i}
               className={`relative flex flex-col items-center text-center px-3 sm:px-5 md:px-6 py-8 md:py-12 border-r border-b border-white/15 min-h-[240px] md:min-h-[330px] justify-between w-1/2 sm:w-auto ${
-                i === certBadges.length - 1 ? 'border-l sm:border-l-0' : ''
+                i % 2 === 0 ? 'border-l sm:border-l-0' : ''
               }`}
             >
               <span className="font-label-lg text-white text-[13px] sm:text-[15px] md:text-[16px] uppercase tracking-[0.14em] sm:tracking-[0.18em] leading-[1.5] min-h-[60px] md:min-h-[84px] flex items-start justify-center">
