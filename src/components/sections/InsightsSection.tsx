@@ -16,7 +16,7 @@ export default function InsightsSection() {
           {insights.map((insight, i) => (
             <article key={i} className="group cursor-pointer accelerated-layer">
               <div className="aspect-video rounded-xl overflow-hidden mb-6">
-                <div className={`w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105 accelerated-layer`} alt={insight.imageAlt} style={{ backgroundImage: `url("${insight.imageUrl}")` }}></div>
+                <div className={`w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105 accelerated-layer`} role="img" aria-label={insight.imageAlt} style={{ backgroundImage: `url("${insight.imageUrl}")` }}></div>
               </div>
               <span className={`${insight.categoryColor} font-label-md uppercase mb-2 block`}>{insight.category}</span>
               <h4 className={`font-headline-lg mb-4 ${insight.hoverColorClass} transition-colors`}>{insight.title}</h4>

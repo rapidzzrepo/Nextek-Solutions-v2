@@ -1,4 +1,4 @@
-import { trustFeatures } from '../../../data/HomeV3'
+import { trustFeatures } from '../../../data/HomeData'
 import StarfieldBackground from '../../ui/StarfieldBackground'
 import SectionDivider from '../../ui/SectionDivider'
 

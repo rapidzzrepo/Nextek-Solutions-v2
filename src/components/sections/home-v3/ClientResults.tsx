@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { clientResults } from '../../../data/HomeV3'
+import { clientResults } from '../../../data/HomeData'
 import { useCountUp, useScrollReveal } from '../../../hooks'
 
 function MiniChart({ values, color }: { values: number[]; color: string }) {

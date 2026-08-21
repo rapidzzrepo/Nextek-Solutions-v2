@@ -14,9 +14,9 @@ export default function CTASection() {
               <span>Book Free Consultation</span>
               <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </a>
-            <a href="tel:+1234567890" className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-white/[0.05] backdrop-blur-sm text-white font-label-lg hover:bg-white/[0.1] transition-colors">
+            <a href="tel:+923218819634" className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-white/[0.05] backdrop-blur-sm text-white font-label-lg hover:bg-white/[0.1] transition-colors">
               <span className="material-symbols-outlined text-xl">call</span>
-              <span>+1 (234) 567-890</span>
+              <span>+92 321 8819634</span>
             </a>
           </div>
           

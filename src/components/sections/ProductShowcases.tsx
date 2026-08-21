@@ -25,7 +25,7 @@ export default function ProductShowcases() {
                 <div className="lg:w-1/2 order-1 lg:order-2">
                   <div className="relative">
                     <div className={`absolute -inset-4 ${product.glowColor} blur-2xl rounded-full`}></div>
-                    <div className="relative aspect-video bg-cover bg-center rounded-2xl shadow-xl accelerated-layer" alt={product.imageAlt} style={{ backgroundImage: `url("${product.imageUrl}")` }}></div>
+                    <div className="relative aspect-video bg-cover bg-center rounded-2xl shadow-xl accelerated-layer" role="img" aria-label={product.imageAlt} style={{ backgroundImage: `url("${product.imageUrl}")` }}></div>
                   </div>
                 </div>
               </>
@@ -34,7 +34,7 @@ export default function ProductShowcases() {
                 <div className="lg:w-1/2">
                   <div className="relative">
                     <div className={`absolute -inset-4 ${product.glowColor} blur-2xl rounded-full`}></div>
-                    <div className="relative aspect-video bg-cover bg-center rounded-2xl shadow-xl accelerated-layer" alt={product.imageAlt} style={{ backgroundImage: `url("${product.imageUrl}")` }}></div>
+                    <div className="relative aspect-video bg-cover bg-center rounded-2xl shadow-xl accelerated-layer" role="img" aria-label={product.imageAlt} style={{ backgroundImage: `url("${product.imageUrl}")` }}></div>
                   </div>
                 </div>
                 <div className="lg:w-1/2">

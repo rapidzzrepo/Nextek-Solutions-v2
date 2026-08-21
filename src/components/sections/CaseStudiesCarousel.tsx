@@ -22,7 +22,7 @@ export default function CaseStudiesCarousel() {
         {caseStudies.map((study, i) => (
           <div key={i} className="min-w-[80vw] md:min-w-[600px] bg-surface-container rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 accelerated-layer">
             <div className="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shrink-0">
-              <div className="w-full h-full bg-cover bg-center accelerated-layer" alt={study.imageAlt} style={{ backgroundImage: `url("${study.imageUrl}")` }}></div>
+              <div className="w-full h-full bg-cover bg-center accelerated-layer" role="img" aria-label={study.imageAlt} style={{ backgroundImage: `url("${study.imageUrl}")` }}></div>
             </div>
             <div className="flex flex-col justify-between py-4">
               <div>

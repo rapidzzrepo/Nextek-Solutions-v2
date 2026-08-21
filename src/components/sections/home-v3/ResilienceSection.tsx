@@ -1,4 +1,4 @@
-import { resilienceFeatures } from '../../../data/HomeV3'
+import { resilienceFeatures } from '../../../data/HomeData'
 
 export default function ResilienceSection() {
   return (

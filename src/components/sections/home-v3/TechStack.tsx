@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { techCategories } from '../../../data/HomeV3'
+import { techCategories } from '../../../data/HomeData'
 import { useScrollReveal } from '../../../hooks'
 
 export default function TechStack() {

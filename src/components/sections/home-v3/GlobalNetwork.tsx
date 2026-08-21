@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { networkNodes, networkConnections } from '../../../data/HomeV3'
+import { networkNodes, networkConnections } from '../../../data/HomeData'
 import { useScrollReveal } from '../../../hooks'
 import StarfieldBackground from '../../ui/StarfieldBackground'
 import SectionDivider from '../../ui/SectionDivider'

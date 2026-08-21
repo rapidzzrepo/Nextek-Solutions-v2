@@ -1,4 +1,4 @@
-import { certBadges } from '../../../data/HomeV2'
+import { certBadges } from '../../../data/HomeData'
 import { useScrollReveal } from '../../../hooks'
 import { useEffect } from 'react'
 

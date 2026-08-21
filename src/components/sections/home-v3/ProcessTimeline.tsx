@@ -1,4 +1,4 @@
-import { processSteps } from '../../../data/HomeV3'
+import { processSteps } from '../../../data/HomeData'
 
 export default function ProcessTimeline() {
   return (

@@ -1,4 +1,4 @@
-import { partnerLogos } from '../../../data/HomeV3'
+import { partnerLogos } from '../../../data/HomeData'
 
 export default function PartnerLogos() {
   return (

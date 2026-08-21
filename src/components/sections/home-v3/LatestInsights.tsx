@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { insights } from '../../../data/HomeV3'
+import { insights } from '../../../data/HomeData'
 
 export default function LatestInsights() {
   return (

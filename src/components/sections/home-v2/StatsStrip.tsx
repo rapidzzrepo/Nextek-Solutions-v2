@@ -1,4 +1,4 @@
-import { statCounters } from '../../../data/HomeV2'
+import { statCounters } from '../../../data/HomeData'
 import { useCountUp } from '../../../hooks'
 
 function Counter({ stat, index }: { stat: (typeof statCounters)[number]; index: number }) {

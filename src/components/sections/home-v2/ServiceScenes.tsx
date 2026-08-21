@@ -1,4 +1,4 @@
-import { serviceScenes } from '../../../data/HomeV2'
+import { serviceScenes } from '../../../data/HomeData'
 import { useScrollReveal } from '../../../hooks'
 import StarfieldBackground from '../../ui/StarfieldBackground'
 

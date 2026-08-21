@@ -1,4 +1,4 @@
-import { heroTitle, heroDescription, heroStats } from '../../../data/HomeV2'
+import { heroTitle, heroDescription, heroStats } from '../../../data/HomeData'
 import StarfieldBackground from '../../ui/StarfieldBackground'
 
 export default function HeroSection() {
