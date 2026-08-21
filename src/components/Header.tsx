@@ -2,9 +2,12 @@ import { useState, useEffect, useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { navLinks } from '../data/navigation'
 
+const darkRoutes = ['/intelligence', '/']
+
 export default function Header() {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const isDark = darkRoutes.includes(location.pathname)
 
   const closeMenu = useCallback(() => setMenuOpen(false), [])
 
@@ -23,11 +26,11 @@ export default function Header() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 sm:px-8 md:px-[48px] py-3 md:py-4 bg-surface/80 glass-nav border-b border-outline-variant/30">
+      <nav className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 sm:px-8 md:px-[48px] py-3 md:py-4 transition-colors duration-300 ${isDark ? 'bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10' : 'bg-surface/80 glass-nav border-b border-outline-variant/30'}`}>
         <Link to="/" className="h-8 md:h-10" onClick={closeMenu}>
           <img
             alt="Nextek Sol Logo"
-            className="h-full w-auto object-contain"
+            className={`h-full w-auto object-contain transition-all ${isDark ? 'brightness-0 invert' : ''}`}
             src="/Nextek%20Sol%20Logos/Group%201261160238.png"
           />
         </Link>
@@ -41,7 +44,7 @@ export default function Header() {
                 className={`font-label-md text-[12px] md:text-label-md transition-colors whitespace-nowrap ${
                   isActive
                     ? 'text-primary font-bold border-b-2 border-primary pb-1'
-                    : 'text-on-surface-variant hover:text-primary'
+                    : isDark ? 'text-white/60 hover:text-white' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
                 {link.label}
@@ -59,7 +62,7 @@ export default function Header() {
           <button
             id="hamburger-btn"
             onClick={() => setMenuOpen(prev => !prev)}
-            className="md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-[5px] bg-transparent border-none cursor-pointer z-[60]"
+            className={`md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-[5px] bg-transparent border-none cursor-pointer z-[60] ${isDark ? 'text-white' : ''}`}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >
             <span className={`block w-5 h-[2px] rounded bg-current transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[3.5px]' : ''}`} />
@@ -75,13 +78,13 @@ export default function Header() {
       >
         <div className="absolute inset-0 bg-black/40" onClick={closeMenu} />
         <div
-          className={`absolute top-0 right-0 h-full w-1/2 min-w-[240px] max-w-[320px] bg-white shadow-xl transition-transform duration-300 flex flex-col ${
-            menuOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
+          className={`absolute top-0 right-0 h-full w-1/2 min-w-[240px] max-w-[320px] shadow-xl transition-transform duration-300 flex flex-col ${
+            isDark ? 'bg-[#0a0a0a]' : 'bg-white'
+          } ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <button
             onClick={closeMenu}
-            className="absolute top-4 left-4 w-8 h-8 flex items-center justify-center bg-transparent border-none cursor-pointer text-gray-500 hover:text-gray-800 transition-colors z-10"
+            className={`absolute top-4 left-4 w-8 h-8 flex items-center justify-center bg-transparent border-none cursor-pointer transition-colors z-10 ${isDark ? 'text-white/60 hover:text-white' : 'text-gray-500 hover:text-gray-800'}`}
             aria-label="Close menu"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,10 +99,10 @@ export default function Header() {
                   key={link.path}
                   to={link.path}
                   onClick={closeMenu}
-                  className={`py-4 text-lg font-sora font-semibold border-b border-gray-100 transition-colors ${
+                  className={`py-4 text-lg font-sora font-semibold transition-colors ${
                     isActive
                       ? 'text-primary'
-                      : 'text-gray-800 hover:text-primary'
+                      : isDark ? 'text-white/70 hover:text-white border-b border-white/5' : 'text-gray-800 hover:text-primary border-b border-gray-100'
                   }`}
                 >
                   {link.label}

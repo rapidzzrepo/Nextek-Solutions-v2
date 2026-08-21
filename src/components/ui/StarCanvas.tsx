@@ -1,20 +1,12 @@
-import { useEffect } from 'react'
-import { initPrecisionStars } from '../../utils/webglStars'
-
 interface StarCanvasProps {
-  canvasId: string
+  id: string
   className?: string
 }
 
-export default function StarCanvas({ canvasId, className = 'w-full h-full block' }: StarCanvasProps) {
-  useEffect(() => {
-    const cleanup = initPrecisionStars(canvasId)
-    return () => cleanup()
-  }, [canvasId])
-
+export default function StarCanvas({ id, className = 'w-full h-full block' }: StarCanvasProps) {
   return (
     <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-      <canvas id={canvasId} className={className} />
+      <canvas id={id} className={className} />
     </div>
   )
 }
