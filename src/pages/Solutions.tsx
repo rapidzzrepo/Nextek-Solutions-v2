@@ -204,15 +204,15 @@ export default function Solutions() {
           <p className="text-on-primary/80 font-body-lg max-w-2xl mx-auto mb-6 md:mb-10 relative z-10">
             {ctaDescription}
           </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center relative z-10">
-            <Button variant="white" href="/contact" size="lg">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-stretch md:items-center relative z-10">
+            <Button variant="white" href="/contact" size="lg" className="w-full md:w-auto !whitespace-normal">
               {ctaPrimaryText}
             </Button>
             <Button
               variant="outline"
               href="/case-studies"
               size="lg"
-              className="border-white text-on-primary hover:bg-white/10"
+              className="w-full md:w-auto !border-white !text-white hover:!bg-white/10 !whitespace-normal"
             >
               {ctaSecondaryText}
             </Button>
