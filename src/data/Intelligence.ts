@@ -113,6 +113,20 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     quote:
+      '"their growth team rebuilt our entire paid media funnel from scratch and our cost per acquisition dropped by almost half in a single quarter. its rare to find engineers who actually understand marketing data the way these folks do."',
+    name: 'Elena Rodriguez',
+    role: 'CMO, Brightline Retail',
+    initials: 'ER',
+  },
+  {
+    quote:
+      '"we originally approached NT Sol just for a campaign landing page and ended up with a full marketing automation stack instead. our email open rates doubled and the conversion tracking finally speaks the same language as our ad platforms."',
+    name: 'Tom Becker',
+    role: 'Growth Lead, Nexa Digital',
+    initials: 'TB',
+  },
+  {
+    quote:
       '"NT Sol didn\'t just provide us a service, they literally architected our whole transformation. their engineering prescision and refusal to settle for good enough is what sets them apart from every other firm we\'ve worked with."',
     name: 'Marcus Vancity',
     role: 'CTO, Global Infra Dynamics',
@@ -126,20 +140,6 @@ export const testimonials: Testimonial[] = [
     role: 'VP Infrastructure, Global Connect',
     initials: 'DV',
   },
-  {
-    quote:
-      '"their growth team rebuilt our entire paid media funnel from scratch and our cost per acquisition dropped by almost half in a single quarter. its rare to find engineers who actually understand marketing data the way these folks do."',
-    name: 'Elena Rodriguez',
-    role: 'CMO, Brightline Retail',
-    initials: 'ER',
-  },
-  {
-    quote:
-      '"we originally approached NT Sol just for a campaign landing page and ended up with a full marketing automation stack instead. our email open rates doubled and the conversion tracking finally speaks the same language as our ad platforms."',
-    name: 'Tom Becker',
-    role: 'Growth Lead, Nexa Digital',
-    initials: 'TB',
-  },
 ]
 
 export interface ResultStat {
@@ -149,10 +149,10 @@ export interface ResultStat {
 }
 
 export const resultStats: ResultStat[] = [
-  { icon: 'rocket_launch', value: '140+', label: 'Deployments' },
-  { icon: 'verified', value: '99.9', label: 'Uptime %' },
-  { icon: 'speed', value: '12ms', label: 'Avg Latency' },
-  { icon: 'military_tech', value: '15', label: 'Patents Issued' },
+  { icon: 'campaign', value: '480+', label: 'Campaigns Launched' },
+  { icon: 'trending_up', value: '500%', label: 'Avg. Traffic Growth' },
+  { icon: 'rocket_launch', value: '150+', label: 'Projects Delivered' },
+  { icon: 'verified', value: '99.9%', label: 'Platform Uptime' },
 ]
 
 export const ctaTitle = 'Ready to engineer your next horizon?'

@@ -47,27 +47,34 @@ function MiniChart({ values, color }: { values: number[]; color: string }) {
   )
 }
 
-function ProgressRing({ value, color }: { value: number; color: string }) {
+function ProgressRing({ value, color, logo, client }: { value: number; color: string; logo: string; client: string }) {
   const radius = 36
   const circumference = 2 * Math.PI * radius
   const filled = (value / 500) * circumference
   return (
-    <svg width="88" height="88" viewBox="0 0 88 88" className="shrink-0 mx-auto sm:mx-0">
-      <circle cx="44" cy="44" r={radius} fill="none" stroke="rgba(0,0,0,0.06)" strokeWidth="6" />
-      <circle
-        cx="44"
-        cy="44"
-        r={radius}
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="6"
-        strokeLinecap="round"
-        strokeDasharray={circumference}
-        strokeDashoffset={circumference - filled}
-        className={`${color} progress-ring-circle`}
-        style={{ transform: 'rotate(-90deg)', transformOrigin: '50% 50%' }}
-      />
-    </svg>
+    <div className="relative w-[88px] h-[88px] shrink-0 mx-auto sm:mx-0">
+      <svg width="88" height="88" viewBox="0 0 88 88">
+        <circle cx="44" cy="44" r={radius} fill="none" stroke="rgba(0,0,0,0.06)" strokeWidth="6" />
+        <circle
+          cx="44"
+          cy="44"
+          r={radius}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={circumference - filled}
+          className={`${color} progress-ring-circle`}
+          style={{ transform: 'rotate(-90deg)', transformOrigin: '50% 50%' }}
+        />
+      </svg>
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[56px] h-[56px] rounded-full bg-[#131b2e] flex items-center justify-center p-2 shadow-lg shadow-primary/10">
+          <img src={logo} alt={`${client} logo`} className="max-w-full max-h-full w-auto h-auto object-contain" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -82,7 +89,7 @@ function ResultCard({ result, index }: { result: (typeof clientResults)[number];
   return (
     <div ref={ref} className="p-6 rounded-2xl bg-surface-container/50 backdrop-blur-sm hover:bg-surface-container hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300">
       <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-5">
-        <ProgressRing value={result.metricValue} color={result.color} />
+        <ProgressRing value={result.metricValue} color={result.color} logo={result.logo} client={result.client} />
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">
             <span className="font-label-md text-primary text-[11px] tracking-widest uppercase">{result.category}</span>

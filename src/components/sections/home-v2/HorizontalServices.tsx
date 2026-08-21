@@ -26,36 +26,13 @@ export default function HorizontalServices() {
 
   const maxIndex = Math.max(0, horizontalServices.length - visibleCount)
 
-  const carouselRef = useRef<HTMLDivElement>(null)
   const touchStartX = useRef(0)
-  const stateRef = useRef({ index, maxIndex })
-  stateRef.current = { index, maxIndex }
 
   const handlePrev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), [])
   const handleNext = useCallback(
     () => setIndex((i) => Math.min(maxIndex, i + 1)),
     [maxIndex]
   )
-
-  useEffect(() => {
-    const el = carouselRef.current
-    if (!el) return
-    let lastSnap = 0
-    const onWheel = (e: WheelEvent) => {
-      const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY
-      if (Math.abs(delta) < 5) return
-      const { index: cur, maxIndex: max } = stateRef.current
-      const goingNext = delta > 0
-      if (goingNext ? cur >= max : cur <= 0) return
-      e.preventDefault()
-      const now = performance.now()
-      if (now - lastSnap < 300) return
-      lastSnap = now
-      setIndex((i) => Math.min(max, Math.max(0, goingNext ? i + 1 : i - 1)))
-    }
-    el.addEventListener('wheel', onWheel, { passive: false })
-    return () => el.removeEventListener('wheel', onWheel)
-  }, [])
 
   useEffect(() => {
     const el = sectionRef.current
@@ -77,41 +54,28 @@ export default function HorizontalServices() {
   }, [sectionRef])
 
   const arrowClasses =
-    'w-11 h-11 rounded-full border border-outline-variant/40 bg-white/[0.04] flex items-center justify-center text-on-surface transition-all duration-300 hover:bg-primary hover:border-primary hover:text-white active:scale-95 disabled:opacity-30 disabled:pointer-events-none'
+    'w-11 h-11 rounded-full border border-outline-variant/60 bg-white text-on-surface shadow-md shadow-primary/5 flex items-center justify-center transition-all duration-300 hover:bg-primary hover:border-primary hover:text-white hover:shadow-lg hover:shadow-primary/20 active:scale-95 disabled:opacity-30 disabled:pointer-events-none'
 
   return (
     <section className="py-20 md:py-[120px] bg-gradient-to-b from-surface via-surface to-surface relative overflow-hidden" id="h-services-v2" ref={sectionRef}>
       <div className="px-margin-mobile sm:px-margin-tablet md:px-[48px] mb-10 stagger-fade">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-          <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-[11px] tracking-widest uppercase mb-4">What We Do</span>
-            <h2 className="font-display-lg text-[28px] sm:text-[36px] md:text-headline-xl text-on-surface mb-4">Marketing + Engineering, Unified</h2>
-            <p className="font-body-lg text-on-surface-variant max-w-xl">Everything you need to grow — from ad campaigns to custom software.</p>
-          </div>
-          <div className="flex items-center gap-3 shrink-0">
-            <button onClick={handlePrev} disabled={index === 0} className={arrowClasses} aria-label="Previous services">
-              <span className="material-symbols-outlined text-xl">arrow_back</span>
-            </button>
-            <button onClick={handleNext} disabled={index === maxIndex} className={arrowClasses} aria-label="Next services">
-              <span className="material-symbols-outlined text-xl">arrow_forward</span>
-            </button>
-          </div>
-        </div>
+        <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-[11px] tracking-widest uppercase mb-4">What We Do</span>
+        <h2 className="font-display-lg text-[28px] sm:text-[36px] md:text-headline-xl text-on-surface mb-4">Marketing + Engineering, Unified</h2>
+        <p className="font-body-lg text-on-surface-variant max-w-xl">Everything you need to grow — from ad campaigns to custom software.</p>
       </div>
       <div
-        ref={carouselRef}
-        className="overflow-hidden -mx-3 px-margin-mobile sm:px-margin-tablet md:px-[48px]"
-        onTouchStart={(e) => {
-          touchStartX.current = e.touches[0].clientX
-        }}
-        onTouchEnd={(e) => {
-          const delta = e.changedTouches[0].clientX - touchStartX.current
-          if (Math.abs(delta) < 40) return
-          setIndex((i) =>
-            delta < 0 ? Math.min(maxIndex, i + 1) : Math.max(0, i - 1)
-          )
-        }}
-      >
+          className="overflow-hidden -mx-3 px-margin-mobile sm:px-margin-tablet md:px-[48px]"
+          onTouchStart={(e) => {
+            touchStartX.current = e.touches[0].clientX
+          }}
+          onTouchEnd={(e) => {
+            const delta = e.changedTouches[0].clientX - touchStartX.current
+            if (Math.abs(delta) < 40) return
+            setIndex((i) =>
+              delta < 0 ? Math.min(maxIndex, i + 1) : Math.max(0, i - 1)
+            )
+          }}
+        >
         <div
           className="flex transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${index * (100 / visibleCount)}%)` }}
@@ -128,6 +92,14 @@ export default function HorizontalServices() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex items-center justify-between sm:justify-end gap-3 mt-6 px-margin-mobile sm:px-margin-tablet md:px-[48px]">
+        <button onClick={handlePrev} disabled={index === 0} className={arrowClasses} aria-label="Previous services">
+          <span className="material-symbols-outlined text-xl">arrow_back</span>
+        </button>
+        <button onClick={handleNext} disabled={index === maxIndex} className={arrowClasses} aria-label="Next services">
+          <span className="material-symbols-outlined text-xl">arrow_forward</span>
+        </button>
       </div>
     </section>
   )

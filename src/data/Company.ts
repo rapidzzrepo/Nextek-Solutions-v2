@@ -10,6 +10,7 @@ export interface Leader {
   imageUrl: string
   imageAlt: string
   imagePosition?: string
+  imageScale?: number
   github?: string
   linkedin?: string
 }
@@ -42,8 +43,9 @@ export const leaders: Leader[] = [
   {
     name: 'Jawad Khan',
     role: 'Chief Architect',
-    imageUrl: '/Admin/Jawad-2.jpeg',
+    imageUrl: '/Admin/Jawad.png',
     imageAlt: 'Portrait of Jawad Khan, Chief Architect.',
+    imageScale: 1.2,
   },
   {
     name: 'Amjad Islam Khan',

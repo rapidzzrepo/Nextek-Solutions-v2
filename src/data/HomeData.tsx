@@ -104,6 +104,7 @@ export interface ClientResult {
   metricSuffix: string
   description: string
   color: string
+  logo: string
 }
 
 export interface TechCategory {
@@ -313,10 +314,10 @@ export const animatedStats: AnimatedStat[] = [
 ]
 
 export const clientResults: ClientResult[] = [
-  { client: 'SUCCESS.AI', category: 'E-Commerce', metric: 'Organic Traffic Growth', metricValue: 340, metricSuffix: '%', description: 'Boosted organic visibility through technical SEO and content strategy across 12 regional markets.', color: 'text-primary' },
-  { client: 'SPiN', category: 'Food Delivery', metric: 'Revenue Increase', metricValue: 280, metricSuffix: '%', description: 'Rebuilt the delivery partner app and optimized conversion funnels, driving massive revenue gains.', color: 'text-secondary' },
-  { client: 'CastingPAX', category: 'Fintech', metric: 'Transaction Speed', metricValue: 95, metricSuffix: '% faster', description: 'Architected a high-performance payment processing pipeline handling millions of daily transactions.', color: 'text-primary' },
-  { client: 'Lantern Finance', category: 'Finance', metric: 'Lead Conversion', metricValue: 420, metricSuffix: '%', description: 'Combined paid campaigns with a custom CRM integration to triple qualified lead generation.', color: 'text-secondary' },
+  { client: 'SUCCESS.AI', category: 'E-Commerce', metric: 'Organic Traffic Growth', metricValue: 340, metricSuffix: '%', description: 'Boosted organic visibility through technical SEO and content strategy across 12 regional markets.', color: 'text-primary', logo: '/Partner-Logos/Success.ai-white.png' },
+  { client: 'SPiN', category: 'Food Delivery', metric: 'Revenue Increase', metricValue: 280, metricSuffix: '%', description: 'Rebuilt the delivery partner app and optimized conversion funnels, driving massive revenue gains.', color: 'text-secondary', logo: '/Partner-Logos-Old/SPIN.png' },
+  { client: 'CastingPAX', category: 'Fintech', metric: 'Transaction Speed', metricValue: 95, metricSuffix: '% faster', description: 'Architected a high-performance payment processing pipeline handling millions of daily transactions.', color: 'text-primary', logo: '/Partner-Logos/castingPax-copy.png' },
+  { client: 'Lantern Finance', category: 'Finance', metric: 'Lead Conversion', metricValue: 420, metricSuffix: '%', description: 'Combined paid campaigns with a custom CRM integration to triple qualified lead generation.', color: 'text-secondary', logo: '/Partner-Logos/Lantern-Finance-white.png' },
 ]
 
 export const techCategories: TechCategory[] = [
